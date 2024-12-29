@@ -1,0 +1,2417 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<?xml-stylesheet type="text/xsl" href="tipitaka-deva.xsl"?>
+<TEI.2>
+<teiHeader></teiHeader>
+<text>
+<front></front>
+<body xml:space="preserve">
+<p rend="centre">॥ नमो तस्स भगवतो अरहतो सम्मासम्बुद्धस्स॥</p>
+
+<p rend="nikaya">खुद्दकनिकाये</p>
+
+<div id="kn13" n="kn13" type="book">
+<head rend="book">चरियापिटकपाळि</head>
+
+<div id="kn13_1" n="kn13_1" type="vagga">
+<head rend="chapter">१. अकित्तिवग्गो</head>
+
+<p rend="subhead">१. अकित्तिचरिया</p>
+
+<p rend="hangnum" n="1"><hi rend="paranum">१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘कप्पे <pb ed="T" n="2.0551"/><pb ed="M" n="2.0385"/><pb ed="V" n="2.0371"/><pb ed="P" n="0.0073"/> च सतसहस्से, चतुरो च असङ्खिये।</p>
+
+<p rend="gathalast">एत्थन्तरे यं चरितं, सब्बं तं बोधिपाचनं॥</p>
+
+<p rend="hangnum" n="2"><hi rend="paranum">२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अतीतकप्पे चरितं, ठपयित्वा भवाभवे।</p>
+
+<p rend="gathalast">इमम्हि कप्पे चरितं, पवक्खिस्सं सुणोहि मे॥</p>
+
+<p rend="hangnum" n="3"><hi rend="paranum">३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदा अहं ब्रहारञ्‍ञे, सुञ्‍ञे विपिनकानने।</p>
+
+<p rend="gathalast">अज्झोगाहेत्वा <note>अज्झोगहेत्वा (सी॰ स्या॰)</note> विहरामि, अकित्ति नाम तापसो॥</p>
+
+<p rend="hangnum" n="4"><hi rend="paranum">४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तदा <pb ed="V" n="2.0372"/> मं तपतेजेन, सन्तत्तो तिदिवाभिभू।</p>
+
+<p rend="gathalast">धारेन्तो ब्राह्मणवण्णं, भिक्खाय मं उपागमि॥</p>
+
+<p rend="hangnum" n="5"><hi rend="paranum">५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पवना आभतं पण्णं, अतेलञ्‍च अलोणिकं।</p>
+
+<p rend="gathalast">मम द्वारे ठितं दिस्वा, सकटाहेन आकिरिं॥</p>
+
+<p rend="hangnum" n="6"><hi rend="paranum">६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स दत्वानहं पण्णं, निक्‍कुज्‍जित्वान भाजनं।</p>
+
+<p rend="gathalast">पुनेसनं जहित्वान, पाविसिं पण्णसालकं॥</p>
+
+<p rend="hangnum" n="7"><hi rend="paranum">७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘दुतियम्पि <pb ed="T" n="2.0552"/> ततियम्पि, उपगञ्छि ममन्तिकं।</p>
+
+<p rend="gathalast">अकम्पितो अनोलग्गो, एवमेवमदासहं॥</p>
+
+<p rend="hangnum" n="8"><hi rend="paranum">८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न <pb ed="M" n="2.0386"/> मे तप्पच्‍चया अत्थि, सरीरस्मिं विवण्णियं।</p>
+
+<p rend="gathalast">पीतिसुखेन रतिया, वीतिनामेमि तं दिवं॥</p>
+
+<p rend="hangnum" n="9"><hi rend="paranum">९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदि मासम्पि द्वेमासं, दक्खिणेय्यं वरं लभे।</p>
+
+<p rend="gathalast">अकम्पितो अनोलीनो, ददेय्यं दानमुत्तमं॥</p>
+
+<p rend="hangnum" n="10"><hi rend="paranum">१०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न तस्स दानं ददमानो, यसं लाभञ्‍च पत्थयिं।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पत्थयानो, तानि कम्मानि आचरि’’न्ति॥</p>
+
+<p rend="centre">अकित्तिचरियं पठमं।</p>
+
+<p rend="subhead">२. सङ्खचरिया</p>
+
+<p rend="hangnum" n="11"><hi rend="paranum">११</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="P" n="0.0074"/> यदा होमि, ब्राह्मणो सङ्खसव्हयो।</p>
+
+<p rend="gathalast">महासमुद्दं तरितुकामो, उपगच्छामि पट्टनं॥</p>
+
+<p rend="hangnum" n="12"><hi rend="paranum">१२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तत्थद्दसं पटिपथे, सयम्भुं अपराजितं।</p>
+
+<p rend="gathalast">कन्तारद्धानं पटिपन्‍नं <note>कन्तारद्धानपटिपन्‍नं (सी॰ स्या॰)</note>, तत्ताय कठिनभूमिया॥</p>
+
+<p rend="hangnum" n="13"><hi rend="paranum">१३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तमहं पटिपथे दिस्वा, इममत्थं विचिन्तयिं।</p>
+
+<p rend="gathalast">‘इदं खेत्तं अनुप्पत्तं, पुञ्‍ञकामस्स जन्तुनो॥</p>
+
+<p rend="hangnum" n="14"><hi rend="paranum">१४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘यथा कस्सको पुरिसो, खेत्तं दिस्वा महागमं।</p>
+
+<p rend="gathalast">तत्थ बीजं न रोपेति, न सो धञ्‍ञेन अत्थिको॥</p>
+
+<p rend="hangnum" n="15"><hi rend="paranum">१५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘एवमेवाहं <pb ed="T" n="2.0553"/><pb ed="V" n="2.0373"/> पुञ्‍ञकामो, दिस्वा खेत्तवरुत्तमं।</p>
+
+<p rend="gathalast">यदि तत्थ कारं न करोमि, नाहं पुञ्‍ञेन अत्थिको॥</p>
+
+<p rend="hangnum" n="16"><hi rend="paranum">१६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘यथा अमच्‍चो मुद्दिकामो, रञ्‍ञो अन्तेपुरे जने।</p>
+
+<p rend="gathalast">न देति तेसं धनधञ्‍ञं, मुद्दितो परिहायति॥</p>
+
+<p rend="hangnum" n="17"><hi rend="paranum">१७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘एवमेवाहं पुञ्‍ञकामो, विपुलं दिस्वान दक्खिणं।</p>
+
+<p rend="gathalast">यदि तस्स दानं न ददामि, परिहायिस्सामि पुञ्‍ञतो’॥</p>
+
+<p rend="hangnum" n="18"><hi rend="paranum">१८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवाहं चिन्तयित्वान, ओरोहित्वा उपाहना।</p>
+
+<p rend="gathalast">तस्स पादानि वन्दित्वा, अदासिं छत्तुपाहनं॥</p>
+
+<p rend="hangnum" n="19"><hi rend="paranum">१९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तेनेवाहं <pb ed="M" n="2.0387"/> सतगुणतो, सुखुमालो सुखेधितो।</p>
+
+<p rend="gathalast">अपि च दानं परिपूरेन्तो, एवं तस्स अदासह’’न्ति॥</p>
+
+<p rend="centre">सङ्खचरियं दुतियं।</p>
+
+<p rend="subhead">३. कुरुराजचरिया</p>
+
+<p rend="hangnum" n="20"><hi rend="paranum">२०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं यदा होमि, इन्दपत्थे <note>इन्दपत्ते (सी॰ क॰)</note> पुरुत्तमे।</p>
+
+<p rend="gathalast">राजा धनञ्‍चयो नाम, कुसले दसहुपागतो॥</p>
+
+<p rend="hangnum" n="21"><hi rend="paranum">२१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘कलिङ्गरट्ठविसया, ब्राह्मणा उपगञ्छु मं।</p>
+
+<p rend="gathalast">आयाचुं मं हत्थिनागं, धञ्‍ञं मङ्गलसम्मतं॥</p>
+
+<p rend="hangnum" n="22"><hi rend="paranum">२२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘अवुट्ठिको जनपदो, दुब्भिक्खो छातको महा।</p>
+
+<p rend="gathalast">ददाहि पवरं नागं, नीलं अञ्‍जनसव्हयं॥</p>
+
+<p rend="hangnum" n="23"><hi rend="paranum">२३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘न <pb ed="T" n="2.0554"/><pb ed="P" n="0.0075"/> मे याचकमनुप्पत्ते, पटिक्खेपो अनुच्छवो।</p>
+
+<p rend="gathalast">मा मे भिज्‍जि समादानं, दस्सामि विपुलं गजं’॥</p>
+
+<p rend="hangnum" n="24"><hi rend="paranum">२४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘नागं गहेत्वा सोण्डाय, भिङ्गारे <note>भिङ्कारे (सी॰)</note> रतनामये।</p>
+
+<p rend="gathalast">जलं हत्थे आकिरित्वा, ब्राह्मणानं अदं गजं॥</p>
+
+<p rend="hangnum" n="25"><hi rend="paranum">२५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स नागे पदिन्‍नम्हि, अमच्‍चा एतदब्रवुं।</p>
+
+<p rend="gathalast">‘किं नु तुय्हं वरं नागं, याचकानं पदस्ससि॥</p>
+
+<p rend="hangnum" n="26"><hi rend="paranum">२६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘धञ्‍ञं <pb ed="V" n="2.0374"/> मङ्गलसम्पन्‍नं, सङ्गामविजयुत्तमं।</p>
+
+<p rend="gathalast">तस्मिं नागे पदिन्‍नम्हि, किं ते रज्‍जं करिस्सति॥</p>
+
+<p rend="hangnum" n="27"><hi rend="paranum">२७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘रज्‍जम्पि मे ददे सब्बं, सरीरं दज्‍जमत्तनो।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पियं मय्हं, तस्मा नागं अदासह’’’न्ति॥</p>
+
+<p rend="centre">कुरुराजचरियं ततियं।</p>
+
+<p rend="subhead">४. महासुदस्सनचरिया</p>
+
+<p rend="hangnum" n="28"><hi rend="paranum">२८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘कुसावतिम्हि नगरे, यदा आसिं महीपति।</p>
+
+<p rend="gathalast">महासुदस्सनो नाम, चक्‍कवत्ती महब्बलो॥</p>
+
+<p rend="hangnum" n="29"><hi rend="paranum">२९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तत्थाहं <pb ed="M" n="2.0388"/> दिवसे तिक्खत्तुं, घोसापेमि तहिं तहिं।</p>
+
+<p rend="gathalast">‘को किं इच्छति पत्थेति, कस्स किं दीयतू धनं॥</p>
+
+<p rend="hangnum" n="30"><hi rend="paranum">३०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘को छातको को तसितो, को मालं को विलेपनं।</p>
+
+<p rend="gathalast">नानारत्तानि वत्थानि, को नग्गो परिदहिस्सति॥</p>
+
+<p rend="hangnum" n="31"><hi rend="paranum">३१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘को पथे छत्तमादेति, कोपाहना मुदू सुभा’।</p>
+
+<p rend="gathalast">इति <pb ed="T" n="2.0555"/> सायञ्‍च पातो च, घोसापेमि तहिं तहिं॥</p>
+
+<p rend="hangnum" n="32"><hi rend="paranum">३२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न तं दससु ठानेसु, नपि ठानसतेसु वा।</p>
+
+<p rend="gathalast">अनेकसतठानेसु, पटियत्तं याचके धनं॥</p>
+
+<p rend="hangnum" n="33"><hi rend="paranum">३३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘दिवा वा यदि वा रत्तिं, यदि एति वनिब्बको।</p>
+
+<p rend="gathalast">लद्धा यदिच्छकं भोगं, पूरहत्थोव गच्छति॥</p>
+
+<p rend="hangnum" n="34"><hi rend="paranum">३४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवरूपं महादानं, अदासिं यावजीविकं।</p>
+
+<p rend="gathalast">नपाहं देस्सं धनं दम्मि, नपि नत्थि निचयो मयि॥</p>
+
+<p rend="hangnum" n="35"><hi rend="paranum">३५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यथापि आतुरो नाम, रोगतो परिमुत्तिया।</p>
+
+<p rend="gathalast">धनेन वेज्‍जं तप्पेत्वा, रोगतो परिमुच्‍चति॥</p>
+
+<p rend="hangnum" n="36"><hi rend="paranum">३६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तथेवाहं जानमानो, परिपूरेतुमसेसतो।</p>
+
+<p rend="gatha2">ऊनमनं पूरयितुं, देमि दानं वनिब्बके।</p>
+
+<p rend="gathalast">निरालयो अपच्‍चासो, सम्बोधिमनुपत्तिया’’ति॥</p>
+
+<p rend="centre">महासुदस्सनचरियं चतुत्थं।</p>
+
+<p rend="subhead">५. महागोविन्दचरिया</p>
+
+<p rend="hangnum" n="37"><hi rend="paranum">३७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="V" n="2.0375"/><pb ed="P" n="0.0076"/> यदा होमि, सत्तराजपुरोहितो।</p>
+
+<p rend="gathalast">पूजितो नरदेवेहि, महागोविन्दब्राह्मणो॥</p>
+
+<p rend="hangnum" n="38"><hi rend="paranum">३८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तदाहं सत्तरज्‍जेसु, यं मे आसि उपायनं।</p>
+
+<p rend="gathalast">तेन देमि महादानं, अक्खोब्भं <note>अक्खोभं (स्या॰ कं॰)</note> सागरूपमं॥</p>
+
+<p rend="hangnum" n="39"><hi rend="paranum">३९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न <pb ed="T" n="2.0556"/><pb ed="M" n="2.0389"/> मे देस्सं धनं धञ्‍ञं, नपि नत्थि निचयो मयि।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पियं मय्हं, तस्मा देमि वरं धन’’न्ति॥</p>
+
+<p rend="centre">महागोविन्दचरियं पञ्‍चमं।</p>
+
+<p rend="subhead">६. निमिराजचरिया</p>
+
+<p rend="hangnum" n="40"><hi rend="paranum">४०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं यदा होमि, मिथिलायं पुरुत्तमे।</p>
+
+<p rend="gathalast">निमि नाम महाराजा, पण्डितो कुसलत्थिको॥</p>
+
+<p rend="hangnum" n="41"><hi rend="paranum">४१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तदाहं मापयित्वान, चतुस्सालं चतुम्मुखं।</p>
+
+<p rend="gathalast">तत्थ दानं पवत्तेसिं, मिगपक्खिनरादिनं॥</p>
+
+<p rend="hangnum" n="42"><hi rend="paranum">४२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अच्छादनञ्‍च सयनं, अन्‍नं पानञ्‍च भोजनं।</p>
+
+<p rend="gathalast">अब्बोच्छिन्‍नं करित्वान, महादानं पवत्तयिं॥</p>
+
+<p rend="hangnum" n="43"><hi rend="paranum">४३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यथापि सेवको सामिं, धनहेतुमुपागतो।</p>
+
+<p rend="gathalast">कायेन वाचा मनसा, आराधनीयमेसति॥</p>
+
+<p rend="hangnum" n="44"><hi rend="paranum">४४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तथेवाहं सब्बभवे, परियेसिस्सामि बोधिजं।</p>
+
+<p rend="gathalast">दानेन सत्ते तप्पेत्वा, इच्छामि बोधिमुत्तम’’न्ति॥</p>
+
+<p rend="centre">निमिराजचरियं छट्ठं।</p>
+
+<p rend="subhead">७. चन्दकुमारचरिया</p>
+
+<p rend="hangnum" n="45"><hi rend="paranum">४५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="V" n="2.0376"/><pb ed="P" n="0.0077"/> यदा होमि, एकराजस्स अत्रजो।</p>
+
+<p rend="gathalast">नगरे पुप्फवतिया, कुमारो चन्दसव्हयो॥</p>
+
+<p rend="hangnum" n="46"><hi rend="paranum">४६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तदाहं <pb ed="T" n="2.0557"/> यजना मुत्तो, निक्खन्तो यञ्‍ञवाटतो।</p>
+
+<p rend="gathalast">संवेगं जनयित्वान, महादानं पवत्तयिं॥</p>
+
+<p rend="hangnum" n="47"><hi rend="paranum">४७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘नाहं पिवामि खादामि, नपि भुञ्‍जामि भोजनं।</p>
+
+<p rend="gathalast">दक्खिणेय्ये अदत्वान, अपि छप्पञ्‍चरत्तियो॥</p>
+
+<p rend="hangnum" n="48"><hi rend="paranum">४८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यथापि <pb ed="M" n="2.0390"/> वाणिजो नाम, कत्वान भण्डसञ्‍चयं।</p>
+
+<p rend="gathalast">यत्थ लाभो महा होति, तत्थ तं <note>तत्थ नं (सी॰), तत्थ (क॰)</note> हरति भण्डकं॥</p>
+
+<p rend="hangnum" n="49"><hi rend="paranum">४९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तथेव सकभुत्तापि, परे दिन्‍नं महप्फलं।</p>
+
+<p rend="gathalast">तस्मा परस्स दातब्बं, सतभागो भविस्सति॥</p>
+
+<p rend="hangnum" n="50"><hi rend="paranum">५०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एतमत्थवसं ञत्वा, देमि दानं भवाभवे।</p>
+
+<p rend="gathalast">न पटिक्‍कमामि दानतो, सम्बोधिमनुपत्तिया’’ति॥</p>
+
+<p rend="centre">चन्दकुमारचरियं सत्तमं।</p>
+
+<p rend="subhead">८. सिविराजचरिया</p>
+
+<p rend="hangnum" n="51"><hi rend="paranum">५१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अरिट्ठसव्हये नगरे, सिविनामासि खत्तियो।</p>
+
+<p rend="gathalast">निसज्‍ज पासादवरे, एवं चिन्तेसहं तदा॥</p>
+
+<p rend="hangnum" n="52"><hi rend="paranum">५२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘यं किञ्‍चि मानुसं दानं, अदिन्‍नं मे न विज्‍जति।</p>
+
+<p rend="gathalast">योपि याचेय्य मं चक्खुं, ददेय्यं अविकम्पितो’॥</p>
+
+<p rend="hangnum" n="53"><hi rend="paranum">५३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मम सङ्कप्पमञ्‍ञाय, सक्‍को देवानमिस्सरो।</p>
+
+<p rend="gathalast">निसिन्‍नो देवपरिसाय, इदं वचनमब्रवि॥</p>
+
+<p rend="hangnum" n="54"><hi rend="paranum">५४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘निसज्‍ज <pb ed="T" n="2.0558"/> पासादवरे, सिविराजा महिद्धिको।</p>
+
+<p rend="gathalast">चिन्तेन्तो विविधं दानं, अदेय्यं सो न पस्सति॥</p>
+
+<p rend="hangnum" n="55"><hi rend="paranum">५५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘तथं <pb ed="V" n="2.0377"/> नु वितथं नेतं, हन्द वीमंसयामि तं।</p>
+
+<p rend="gathalast">मुहुत्तं आगमेय्याथ, याव जानामि तं मनं’॥</p>
+
+<p rend="hangnum" n="56"><hi rend="paranum">५६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पवेधमानो पलितसिरो, वलिगत्तो <note>वलितगत्तो (सी॰)</note> जरातुरो।</p>
+
+<p rend="gathalast">अन्धवण्णोव हुत्वान, राजानं उपसङ्कमि॥</p>
+
+<p rend="hangnum" n="57"><hi rend="paranum">५७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सो <pb ed="P" n="0.0078"/> तदा पग्गहेत्वान, वामं दक्खिणबाहु च।</p>
+
+<p rend="gathalast">सिरस्मिं अञ्‍जलिं कत्वा, इदं वचनमब्रवि॥</p>
+
+<p rend="hangnum" n="58"><hi rend="paranum">५८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘याचामि तं महाराज, धम्मिक रट्ठवड्ढन।</p>
+
+<p rend="gathalast">तव दानरता कित्ति, उग्गता देवमानुसे॥</p>
+
+<p rend="hangnum" n="59"><hi rend="paranum">५९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘उभोपि <pb ed="M" n="2.0391"/> नेत्ता नयना, अन्धा उपहता मम।</p>
+
+<p rend="gathalast">एकं मे नयनं देहि, त्वम्पि एकेन यापय’॥</p>
+
+<p rend="hangnum" n="60"><hi rend="paranum">६०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्साहं वचनं सुत्वा, हट्ठो संविग्गमानसो।</p>
+
+<p rend="gathalast">कतञ्‍जली वेदजातो, इदं वचनमब्रविं॥</p>
+
+<p rend="hangnum" n="61"><hi rend="paranum">६१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘इदानाहं चिन्तयित्वान, पासादतो इधागतो।</p>
+
+<p rend="gathalast">त्वं मम चित्तमञ्‍ञाय, नेत्तं याचितुमागतो॥</p>
+
+<p rend="hangnum" n="62"><hi rend="paranum">६२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘अहो मे मानसं सिद्धं, सङ्कप्पो परिपूरितो।</p>
+
+<p rend="gathalast">अदिन्‍नपुब्बं दानवरं, अज्‍ज दस्सामि याचके॥</p>
+
+<p rend="hangnum" n="63"><hi rend="paranum">६३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘एहि सिवक उट्ठेहि, मा दन्धयि मा पवेधयि।</p>
+
+<p rend="gathalast">उभोपि नयनं देहि, उप्पाटेत्वा वणिब्बके’॥</p>
+
+<p rend="hangnum" n="64"><hi rend="paranum">६४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ततो <pb ed="T" n="2.0559"/> सो चोदितो मय्हं, सिवको वचनं करो।</p>
+
+<p rend="gathalast">उद्धरित्वान पादासि, तालमिञ्‍जंव याचके॥</p>
+
+<p rend="hangnum" n="65"><hi rend="paranum">६५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ददमानस्स देन्तस्स, दिन्‍नदानस्स मे सतो।</p>
+
+<p rend="gathalast">चित्तस्स अञ्‍ञथा नत्थि, बोधियायेव कारणा॥</p>
+
+<p rend="hangnum" n="66"><hi rend="paranum">६६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न मे देस्सा उभो चक्खू, अत्ता न मे न देस्सियो।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पियं मय्हं, तस्मा चक्खुं अदासह’’न्ति॥</p>
+
+<p rend="centre">सिविराजचरियं अट्ठमं।</p>
+
+<p rend="subhead">९. वेस्सन्तरचरिया</p>
+
+<p rend="hangnum" n="67"><hi rend="paranum">६७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘या <pb ed="V" n="2.0378"/> मे अहोसि जनिका, फुस्सती <note>फुसती (सी॰)</note> नाम खत्तिया।</p>
+
+<p rend="gathalast">सा अतीतासु जातीसु, सक्‍कस्स महेसी पिया॥</p>
+
+<p rend="hangnum" n="68"><hi rend="paranum">६८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्सा आयुक्खयं ञत्वा, देविन्दो एतदब्रवि।</p>
+
+<p rend="gathalast">‘ददामि ते दस वरे, वरभद्दे यदिच्छसि’॥</p>
+
+<p rend="hangnum" n="69"><hi rend="paranum">६९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवं वुत्ता च सा देवी, सक्‍कं पुनिदमब्रवि।</p>
+
+<p rend="gatha2">‘किं नु मे अपराधत्थि, किं नु देस्सा अहं तव।</p>
+
+<p rend="gathalast">रम्मा चावेसि मं ठाना, वातोव धरणीरुहं’॥</p>
+
+<p rend="hangnum" n="70"><hi rend="paranum">७०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवं <pb ed="M" n="2.0392"/> वुत्तो च सो सक्‍को, पुन तस्सिदमब्रवि।</p>
+
+<p rend="gathalast">‘न चेव ते कतं पापं, न च मे त्वंसि अप्पिया॥</p>
+
+<p rend="hangnum" n="71"><hi rend="paranum">७१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘एत्तकंयेव <pb ed="P" n="0.0079"/> ते आयु, चवनकालो भविस्सति।</p>
+
+<p rend="gathalast">पटिग्गण्ह मया दिन्‍ने, वरे दस वरुत्तमे’॥</p>
+
+<p rend="hangnum" n="72"><hi rend="paranum">७२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सक्‍केन <pb ed="T" n="2.0560"/> सा दिन्‍नवरा, तुट्ठहट्ठा पमोदिता।</p>
+
+<p rend="gathalast">ममं अब्भन्तरं कत्वा, फुस्सती दस वरे वरी॥</p>
+
+<p rend="hangnum" n="73"><hi rend="paranum">७३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ततो चुता सा फुस्सती, खत्तिये उपपज्‍जथ।</p>
+
+<p rend="gathalast">जेतुत्तरम्हि नगरे, सञ्‍जयेन समागमि॥</p>
+
+<p rend="hangnum" n="74"><hi rend="paranum">७४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदाहं फुस्सतिया कुच्छिं, ओक्‍कन्तो पियमातुया।</p>
+
+<p rend="gathalast">मम तेजेन मे माता, सदा दानरता अहु॥</p>
+
+<p rend="hangnum" n="75"><hi rend="paranum">७५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अधने आतुरे जिण्णे, याचके अद्धिके <note>पथिके (क॰)</note> जने।</p>
+
+<p rend="gathalast">समणे ब्राह्मणे खीणे, देति दानं अकिञ्‍चने॥</p>
+
+<p rend="hangnum" n="76"><hi rend="paranum">७६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘दस मासे धारयित्वान, करोन्ते पुरं पदक्खिणं।</p>
+
+<p rend="gathalast">वेस्सानं वीथिया मज्झे, जनेसि फुस्सती ममं॥</p>
+
+<p rend="hangnum" n="77"><hi rend="paranum">७७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न मय्हं मत्तिकं नामं, नपि पेत्तिकसम्भवं।</p>
+
+<p rend="gathalast">जातेत्थ वेस्सवीथिया, तस्मा वेस्सन्तरो अहु॥</p>
+
+<p rend="hangnum" n="78"><hi rend="paranum">७८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदाहं दारको होमि, जातिया अट्ठवस्सिको।</p>
+
+<p rend="gathalast">तदा निसज्‍ज पासादे, दानं दातुं विचिन्तयिं॥</p>
+
+<p rend="hangnum" n="79"><hi rend="paranum">७९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘हदयं <pb ed="V" n="2.0379"/> ददेय्यं चक्खुं, मंसम्पि रुधिरम्पि च।</p>
+
+<p rend="gathalast">ददेय्यं कायं सावेत्वा, यदि कोचि याचये ममं’॥</p>
+
+<p rend="hangnum" n="80"><hi rend="paranum">८०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सभावं चिन्तयन्तस्स, अकम्पितमसण्ठितं।</p>
+
+<p rend="gathalast">अकम्पि तत्थ पथवी, सिनेरुवनवटंसका॥</p>
+
+<p rend="hangnum" n="81"><hi rend="paranum">८१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अन्वद्धमासे पन्‍नरसे, पुण्णमासे उपोसथे।</p>
+
+<p rend="gathalast">पच्‍चयं नागमारुय्ह, दानं दातुं उपागमिं॥</p>
+
+<p rend="hangnum" n="82"><hi rend="paranum">८२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘कलिङ्गरट्ठविसया<pb ed="T" n="2.0561"/>, ब्राह्मणा उपगञ्छु मं।</p>
+
+<p rend="gathalast">अयाचुं मं हत्थिनागं, धञ्‍ञं मङ्गलसम्मतं॥</p>
+
+<p rend="hangnum" n="83"><hi rend="paranum">८३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अवुट्ठिको <pb ed="M" n="2.0393"/> जनपदो, दुब्भिक्खो छातको महा।</p>
+
+<p rend="gathalast">ददाहि पवरं नागं, सब्बसेतं गजुत्तमं॥</p>
+
+<p rend="hangnum" n="84"><hi rend="paranum">८४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ददामि न विकम्पामि, यं मं याचन्ति ब्राह्मणा।</p>
+
+<p rend="gathalast">सन्तं नप्पतिगूहामि <note>नप्पतिगुय्हामि (सी॰ क॰)</note>, दाने मे रमते मनो॥</p>
+
+<p rend="hangnum" n="85"><hi rend="paranum">८५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न मे याचकमनुप्पत्ते, पटिक्खेपो अनुच्छवो।</p>
+
+<p rend="gathalast">‘मा मे भिज्‍जि समादानं, दस्सामि विपुलं गजं’॥</p>
+
+<p rend="hangnum" n="86"><hi rend="paranum">८६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘नागं गहेत्वा सोण्डाय, भिङ्गारे रतनामये।</p>
+
+<p rend="gathalast">जलं हत्थे आकिरित्वा, ब्राह्मणानं अदं गजं॥</p>
+
+<p rend="hangnum" n="87"><hi rend="paranum">८७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं ददन्तस्स, सब्बसेतं गजुत्तमं।</p>
+
+<p rend="gathalast">तदापि पथवी कम्पि, सिनेरुवनवटंसका॥</p>
+
+<p rend="hangnum" n="88"><hi rend="paranum">८८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स नागस्स दानेन, सिवयो कुद्धा समागता।</p>
+
+<p rend="gathalast">पब्बाजेसुं सका रट्ठा, ‘वङ्कं गच्छतु पब्बतं’॥</p>
+
+<p rend="hangnum" n="89"><hi rend="paranum">८९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तेसं निच्छुभमानानं, अकम्पित्थमसण्ठितं।</p>
+
+<p rend="gathalast">महादानं पवत्तेतुं, एकं वरमयाचिसं॥</p>
+
+<p rend="hangnum" n="90"><hi rend="paranum">९०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘याचिता <pb ed="P" n="0.0080"/> सिवयो सब्बे, एकं वरमदंसु मे।</p>
+
+<p rend="gathalast">सावयित्वा कण्णभेरिं, महादानं ददामहं॥</p>
+
+<p rend="hangnum" n="91"><hi rend="paranum">९१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अथेत्थ वत्तती सद्दो, तुमुलो भेरवो महा।</p>
+
+<p rend="gathalast">दानेनिमं नीहरन्ति, पुन दानं ददातयं॥</p>
+
+<p rend="hangnum" n="92"><hi rend="paranum">९२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘हत्थिं <pb ed="T" n="2.0562"/> अस्से रथे दत्वा, दासिं दासं गवं धनं।</p>
+
+<p rend="gathalast">महादानं ददित्वान, नगरा निक्खमिं तदा॥</p>
+
+<p rend="hangnum" n="93"><hi rend="paranum">९३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘निक्खमित्वान <pb ed="V" n="2.0380"/> नगरा, निवत्तित्वा विलोकिते।</p>
+
+<p rend="gathalast">तदापि पथवी कम्पि, सिनेरुवनवटंसका॥</p>
+
+<p rend="hangnum" n="94"><hi rend="paranum">९४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘चतुवाहिं रथं दत्वा, ठत्वा चातुम्महापथे।</p>
+
+<p rend="gathalast">एकाकियो अदुतियो, मद्दिदेविं इदमब्रविं॥</p>
+
+<p rend="hangnum" n="95"><hi rend="paranum">९५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘त्वं मद्दि कण्हं गण्हाहि, लहुका एसा कनिट्ठिका।</p>
+
+<p rend="gathalast">अहं जालिं गहेस्सामि, गरुको भातिको हि सो’॥</p>
+
+<p rend="hangnum" n="96"><hi rend="paranum">९६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पदुमं <pb ed="M" n="2.0394"/> पुण्डरीकंव, मद्दी कण्हाजिनग्गही।</p>
+
+<p rend="gathalast">अहं सुवण्णबिम्बंव, जालिं खत्तियमग्गहिं॥</p>
+
+<p rend="hangnum" n="97"><hi rend="paranum">९७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अभिजाता सुखुमाला, खत्तिया चतुरो जना।</p>
+
+<p rend="gathalast">विसमं समं अक्‍कमन्ता, वङ्कं गच्छाम पब्बतं॥</p>
+
+<p rend="hangnum" n="98"><hi rend="paranum">९८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ये केचि मनुजा एन्ति, अनुमग्गे पटिप्पथे।</p>
+
+<p rend="gathalast">मग्गन्ते पटिपुच्छाम, ‘कुहिं वङ्कन्त <note>वङ्कत (सी॰)</note> पब्बतो’॥</p>
+
+<p rend="hangnum" n="99"><hi rend="paranum">९९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ते तत्थ अम्हे पस्सित्वा, करुणं गिरमुदीरयुं।</p>
+
+<p rend="gathalast">दुक्खं ते पटिवेदेन्ति, दूरे वङ्कन्तपब्बतो॥</p>
+
+<p rend="hangnum" n="100"><hi rend="paranum">१००</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदि पस्सन्ति पवने, दारका फलिने दुमे।</p>
+
+<p rend="gathalast">तेसं फलानं हेतुम्हि, उपरोदन्ति दारका॥</p>
+
+<p rend="hangnum" n="101"><hi rend="paranum">१०१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘रोदन्ते दारके दिस्वा, उब्बिद्धा <note>उब्बिग्गा (स्या॰ कं॰)</note> विपुला दुमा।</p>
+
+<p rend="gathalast">सयमेवोणमित्वान, उपगच्छन्ति दारके॥</p>
+
+<p rend="hangnum" n="102"><hi rend="paranum">१०२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘इदं <pb ed="T" n="2.0563"/> अच्छरियं दिस्वा, अब्भुतं लोमहंसनं।</p>
+
+<p rend="gathalast">साहुकारं <note>साधुकारं (सब्बत्थ)</note> पवत्तेसि, मद्दी सब्बङ्गसोभना॥</p>
+
+<p rend="hangnum" n="103"><hi rend="paranum">१०३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अच्छेरं वत लोकस्मिं, अब्भुतं लोमहंसनं।</p>
+
+<p rend="gathalast">वेस्सन्तरस्स तेजेन, सयमेवोणता दुमा॥</p>
+
+<p rend="hangnum" n="104"><hi rend="paranum">१०४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सङ्खिपिंसु पथं यक्खा, अनुकम्पाय दारके।</p>
+
+<p rend="gathalast">निक्खन्तदिवसेनेव <note>निक्खन्तदिवसेयेव (सी॰)</note>, चेतरट्ठमुपागमुं॥</p>
+
+<p rend="hangnum" n="105"><hi rend="paranum">१०५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सट्ठिराजसहस्सानि, तदा वसन्ति मातुले।</p>
+
+<p rend="gathalast">सब्बे पञ्‍जलिका हुत्वा, रोदमाना उपागमुं॥</p>
+
+<p rend="hangnum" n="106"><hi rend="paranum">१०६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तत्थ वत्तेत्वा सल्‍लापं, चेतेहि चेतपुत्तेहि।</p>
+
+<p rend="gathalast">ते ततो निक्खमित्वान, वङ्कं अगमु पब्बतं॥</p>
+
+<p rend="hangnum" n="107"><hi rend="paranum">१०७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘आमन्तयित्वा <pb ed="V" n="2.0381"/> देविन्दो, विस्सकम्मं <note>विसुकम्मं (क॰)</note> महिद्धिकं।</p>
+
+<p rend="gathalast">अस्समं सुकतं रम्मं, पण्णसालं सुमापय॥</p>
+
+<p rend="hangnum" n="108"><hi rend="paranum">१०८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सक्‍कस्स वचनं सुत्वा, विस्सकम्मो महिद्धिको।</p>
+
+<p rend="gathalast">अस्समं <pb ed="P" n="0.0081"/> सुकतं रम्मं, पण्णसालं सुमापयि॥</p>
+
+<p rend="hangnum" n="109"><hi rend="paranum">१०९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अज्झोगाहेत्वा <pb ed="M" n="2.0395"/> पवनं, अप्पसद्दं निराकुलं।</p>
+
+<p rend="gathalast">चतुरो जना मयं तत्थ, वसाम पब्बतन्तरे॥</p>
+
+<p rend="hangnum" n="110"><hi rend="paranum">११०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अहञ्‍च मद्दिदेवी च, जाली कण्हाजिना चुभो।</p>
+
+<p rend="gathalast">अञ्‍ञमञ्‍ञं सोकनुदा, वसाम अस्समे तदा॥</p>
+
+<p rend="hangnum" n="111"><hi rend="paranum">१११</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘दारके अनुरक्खन्तो, असुञ्‍ञो होमि अस्समे।</p>
+
+<p rend="gathalast">मद्दी फलं आहरित्वा, पोसेति सा तयो जने॥</p>
+
+<p rend="hangnum" n="112"><hi rend="paranum">११२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पवने <pb ed="T" n="2.0564"/> वसमानस्स, अद्धिको मं उपागमि।</p>
+
+<p rend="gathalast">आयाचि पुत्तके मय्हं, जालिं कण्हाजिनं चुभो॥</p>
+
+<p rend="hangnum" n="113"><hi rend="paranum">११३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘याचकं उपगतं दिस्वा, हासो मे उपपज्‍जथ।</p>
+
+<p rend="gathalast">उभो पुत्ते गहेत्वान, अदासिं ब्राह्मणे तदा॥</p>
+
+<p rend="hangnum" n="114"><hi rend="paranum">११४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सके पुत्ते चजन्तस्स, जूजके ब्राह्मणे यदा।</p>
+
+<p rend="gathalast">तदापि पथवी कम्पि, सिनेरुवनवटंसका॥</p>
+
+<p rend="hangnum" n="115"><hi rend="paranum">११५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनदेव सक्‍को ओरुय्ह, हुत्वा ब्राह्मणसन्‍निभो।</p>
+
+<p rend="gathalast">आयाचि मं मद्दिदेविं, सीलवन्तिं पतिब्बतं॥</p>
+
+<p rend="hangnum" n="116"><hi rend="paranum">११६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मद्दिं हत्थे गहेत्वान, उदकञ्‍जलि पूरिय।</p>
+
+<p rend="gathalast">पसन्‍नमनसङ्कप्पो, तस्स मद्दिं अदासहं॥</p>
+
+<p rend="hangnum" n="117"><hi rend="paranum">११७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मद्दिया दीयमानाय, गगने देवा पमोदिता।</p>
+
+<p rend="gathalast">तदापि पथवी कम्पि, सिनेरुवनवटंसका॥</p>
+
+<p rend="hangnum" n="118"><hi rend="paranum">११८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘जालिं कण्हाजिनं धीतं, मद्दिदेविं पतिब्बतं।</p>
+
+<p rend="gathalast">चजमानो न चिन्तेसिं, बोधियायेव कारणा॥</p>
+
+<p rend="hangnum" n="119"><hi rend="paranum">११९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न मे देस्सा उभो पुत्ता, मद्दिदेवी न देस्सिया।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पियं मय्हं, तस्मा पिये अदासहं॥</p>
+
+<p rend="hangnum" n="120"><hi rend="paranum">१२०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं ब्रहारञ्‍ञे, मातापितुसमागमे।</p>
+
+<p rend="gathalast">करुणं परिदेवन्ते, सल्‍लपन्ते सुखं दुखं॥</p>
+
+<p rend="hangnum" n="121"><hi rend="paranum">१२१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘हिरोत्तप्पेन <pb ed="V" n="2.0382"/> गरुना <note>गरुनं (स्या॰ क॰)</note>, उभिन्‍नं उपसङ्कमि।</p>
+
+<p rend="gathalast">तदापि पथवी कम्पि, सिनेरुवनवटंसका॥</p>
+
+<p rend="hangnum" n="122"><hi rend="paranum">१२२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="T" n="2.0565"/><pb ed="M" n="2.0396"/> ब्रहारञ्‍ञा, निक्खमित्वा सञातिभि।</p>
+
+<p rend="gathalast">पविसामि पुरं रम्मं, जेतुत्तरं पुरुत्तमं॥</p>
+
+<p rend="hangnum" n="123"><hi rend="paranum">१२३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘रतनानि सत्त वस्सिंसु, महामेघो पवस्सथ।</p>
+
+<p rend="gathalast">तदापि पथवी कम्पि, सिनेरुवनवटंसका॥</p>
+
+<p rend="hangnum" n="124"><hi rend="paranum">१२४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अचेतनायं पथवी, अविञ्‍ञाय सुखं दुखं।</p>
+
+<p rend="gathalast">सापि दानबला मय्हं, सत्तक्खत्तुं पकम्पथा’’ति॥</p>
+
+<p rend="centre">वेस्सन्तरचरियं नवमं।</p>
+
+<p rend="subhead">१०. ससपण्डितचरिया</p>
+
+<p rend="hangnum" n="125"><hi rend="paranum">१२५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="P" n="0.0082"/> यदा होमि, ससको पवनचारको।</p>
+
+<p rend="gathalast">तिणपण्णसाकफलभक्खो, परहेठनविवज्‍जितो॥</p>
+
+<p rend="hangnum" n="126"><hi rend="paranum">१२६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मक्‍कटो च सिङ्गालो च, सुत्तपोतो चहं तदा।</p>
+
+<p rend="gathalast">वसाम एकसामन्ता, सायं पातो च दिस्सरे <note>सायं पातो पदिस्सरे (क॰)</note>॥</p>
+
+<p rend="hangnum" n="127"><hi rend="paranum">१२७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अहं ते अनुसासामि, किरिये कल्याणपापके।</p>
+
+<p rend="gathalast">‘पापानि परिवज्‍जेथ, कल्याणे अभिनिविस्सथ’॥</p>
+
+<p rend="hangnum" n="128"><hi rend="paranum">१२८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘उपोसथम्हि दिवसे, चन्दं दिस्वान पूरितं।</p>
+
+<p rend="gathalast">एतेसं तत्थ आचिक्खिं, दिवसो अज्‍जुपोसथो॥</p>
+
+<p rend="hangnum" n="129"><hi rend="paranum">१२९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘दानानि पटियादेथ, दक्खिणेय्यस्स दातवे।</p>
+
+<p rend="gathalast">दत्वा दानं दक्खिणेय्ये, उपवस्सथुपोसथं॥</p>
+
+<p rend="hangnum" n="130"><hi rend="paranum">१३०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ते <pb ed="T" n="2.0566"/> मे साधूति वत्वान, यथासत्ति यथाबलं।</p>
+
+<p rend="gathalast">दानानि पटियादेत्वा, दक्खिणेय्यं गवेसिसुं <note>गवेसय्युं (क॰)</note>॥</p>
+
+<p rend="hangnum" n="131"><hi rend="paranum">१३१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अहं निसज्‍ज चिन्तेसिं, दानं दक्खिणनुच्छवं।</p>
+
+<p rend="gathalast">‘यदिहं लभे दक्खिणेय्यं, किं मे दानं भविस्सति॥</p>
+
+<p rend="hangnum" n="132"><hi rend="paranum">१३२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘न <pb ed="V" n="2.0383"/> मे अत्थि तिला मुग्गा, मासा वा तण्डुला घतं।</p>
+
+<p rend="gathalast">अहं तिणेन यापेमि, न सक्‍का तिण दातवे॥</p>
+
+<p rend="hangnum" n="133"><hi rend="paranum">१३३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘यदि <pb ed="M" n="2.0397"/> कोचि एति दक्खिणेय्यो, भिक्खाय मम सन्तिके।</p>
+
+<p rend="gathalast">दज्‍जाहं सकमत्तानं, न सो तुच्छो गमिस्सति’॥</p>
+
+<p rend="hangnum" n="134"><hi rend="paranum">१३४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मम सङ्कप्पमञ्‍ञाय, सक्‍को ब्राह्मणवण्णिना।</p>
+
+<p rend="gathalast">आसयं मे उपागच्छि, दानवीमंसनाय मे॥</p>
+
+<p rend="hangnum" n="135"><hi rend="paranum">१३५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तमहं दिस्वान सन्तुट्ठो, इदं वचनमब्रविं।</p>
+
+<p rend="gathalast">‘साधु खोसि अनुप्पत्तो, घासहेतु ममन्तिके॥</p>
+
+<p rend="hangnum" n="136"><hi rend="paranum">१३६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘अदिन्‍नपुब्बं दानवरं, अज्‍ज दस्सामि ते अहं।</p>
+
+<p rend="gathalast">तुवं सीलगुणूपेतो, अयुत्तं ते परहेठनं॥</p>
+
+<p rend="hangnum" n="137"><hi rend="paranum">१३७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘एहि अग्गिं पदीपेहि, नानाकट्ठे समानय।</p>
+
+<p rend="gathalast">अहं पचिस्समत्तानं, पक्‍कं त्वं भक्खयिस्ससि’॥</p>
+
+<p rend="hangnum" n="138"><hi rend="paranum">१३८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘साधू’ति सो हट्ठमनो, नानाकट्ठे समानयि।</p>
+
+<p rend="gathalast">महन्तं अकासि चितकं, कत्वा अङ्गारगब्भकं॥</p>
+
+<p rend="hangnum" n="139"><hi rend="paranum">१३९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अग्गिं तत्थ पदीपेसि, यथा सो खिप्पं महा भवे।</p>
+
+<p rend="gathalast">फोटेत्वा रजगते गत्ते, एकमन्तं उपाविसिं॥</p>
+
+<p rend="hangnum" n="140"><hi rend="paranum">१४०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदा <pb ed="T" n="2.0567"/> महाकट्ठपुञ्‍जो, आदित्तो धमधमायति <note>धुमधुमायति (सी॰), धममायति (क॰)</note>।</p>
+
+<p rend="gathalast">तदुप्पतित्वा पपतिं, मज्झे जालसिखन्तरे॥</p>
+
+<p rend="hangnum" n="141"><hi rend="paranum">१४१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यथा <pb ed="P" n="0.0083"/> सीतोदकं नाम, पविट्ठं यस्स कस्सचि।</p>
+
+<p rend="gathalast">समेति दरथपरिळाहं, अस्सादं देति पीति च॥</p>
+
+<p rend="hangnum" n="142"><hi rend="paranum">१४२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तथेव जलितं अग्गिं, पविट्ठस्स ममं तदा।</p>
+
+<p rend="gathalast">सब्बं समेति दरथं, यथा सीतोदकं विय॥</p>
+
+<p rend="hangnum" n="143"><hi rend="paranum">१४३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘छविं चम्मं मंसं न्हारुं, अट्ठिं हदयबन्धनं।</p>
+
+<p rend="gathalast">केवलं सकलं कायं, ब्राह्मणस्स अदासह’’न्ति॥</p>
+
+<p rend="centre">ससपण्डितचरियं दसमं।</p>
+
+<p rend="centre">अकित्तिवग्गो पठमो।</p>
+
+<p rend="bodytext">तस्सुद्दानं <pb ed="V" n="2.0384"/> –</p>
+
+<p rend="gatha1">अकित्तिब्राह्मणो <pb ed="M" n="2.0398"/> सङ्खो, कुरुराजा धनञ्‍चयो।</p>
+
+<p rend="gathalast">महासुदस्सनो राजा, महागोविन्दब्राह्मणो॥</p>
+
+<p rend="gatha1">निमि चन्दकुमारो च, सिवि वेस्सन्तरो ससो।</p>
+
+<p rend="gathalast">अहमेव तदा आसिं, यो ते दानवरे अदा॥</p>
+
+<p rend="gatha1">एते दानपरिक्खारा, एते दानस्स पारमी।</p>
+
+<p rend="gathalast">जीवितं याचके दत्वा, इमं पारमि पूरयिं॥</p>
+
+<p rend="gatha1">भिक्खाय उपगतं दिस्वा, सकत्तानं परिच्‍चजिं।</p>
+
+<p rend="gathalast">दानेन मे समो नत्थि, एसा मे दानपारमीति॥</p>
+
+<trailer rend="centre">दानपारमिनिद्देसो निट्ठितो।</trailer>
+</div>
+
+<div id="kn13_2" n="kn13_2" type="vagga">
+<head rend="chapter">२. हत्थिनागवग्गो</head>
+
+<p rend="subhead">१. मातुपोसकचरिया</p>
+
+<p rend="hangnum" n="1"><hi rend="paranum">१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदा <pb ed="T" n="2.0568"/><pb ed="M" n="2.0399"/><pb ed="V" n="2.0385"/><pb ed="P" n="0.0084"/> अहोसिं पवने, कुञ्‍जरो मातुपोसको।</p>
+
+<p rend="gathalast">न तदा अत्थि महिया, गुणेन मम सादिसो॥</p>
+
+<p rend="hangnum" n="2"><hi rend="paranum">२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पवने दिस्वा वनचरो, रञ्‍ञो मं पटिवेदयि।</p>
+
+<p rend="gathalast">‘तवानुच्छवो महाराज, गजो वसति कानने॥</p>
+
+<p rend="hangnum" n="3"><hi rend="paranum">३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘न तस्स परिक्खायत्थो, नपि आळककासुया।</p>
+
+<p rend="gathalast">सह गहिते <note>समं गहिते (सी॰)</note> सोण्डाय, सयमेव इधेहि’ति॥</p>
+
+<p rend="hangnum" n="4"><hi rend="paranum">४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स तं वचनं सुत्वा, राजापि तुट्ठमानसो।</p>
+
+<p rend="gathalast">पेसेसि हत्थिदमकं, छेकाचरियं सुसिक्खितं॥</p>
+
+<p rend="hangnum" n="5"><hi rend="paranum">५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘गन्त्वा सो हत्थिदमको, अद्दस पदुमस्सरे।</p>
+
+<p rend="gathalast">भिसमुळालं <note>भिसमूलं (क॰)</note> उद्धरन्तं, यापनत्थाय मातुया॥</p>
+
+<p rend="hangnum" n="6"><hi rend="paranum">६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘विञ्‍ञाय मे सीलगुणं, लक्खणं उपधारयि।</p>
+
+<p rend="gathalast">‘एहि पुत्ता’ति पत्वान, मम सोण्डाय अग्गहि॥</p>
+
+<p rend="hangnum" n="7"><hi rend="paranum">७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यं मे तदा पाकतिकं, सरीरानुगतं बलं।</p>
+
+<p rend="gathalast">अज्‍ज नागसहस्सानं, बलेन समसादिसं॥</p>
+
+<p rend="hangnum" n="8"><hi rend="paranum">८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदिहं तेसं पकुप्पेय्यं, उपेतानं गहणाय मं।</p>
+
+<p rend="gathalast">पटिबलो भवे तेसं, याव रज्‍जम्पि मानुसं॥</p>
+
+<p rend="hangnum" n="9"><hi rend="paranum">९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अपि <pb ed="T" n="2.0569"/> चाहं सीलरक्खाय, सीलपारमिपूरिया।</p>
+
+<p rend="gathalast">न करोमि चित्ते अञ्‍ञथत्तं, पक्खिपन्तं ममाळके॥</p>
+
+<p rend="hangnum" n="10"><hi rend="paranum">१०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदि ते मं तत्थ कोट्टेय्युं, फरसूहि तोमरेहि च।</p>
+
+<p rend="gathalast">नेव तेसं पकुप्पेय्यं, सीलखण्डभया ममा’’ति॥</p>
+
+<p rend="centre">मातुपोसकचरियं पठमं।</p>
+
+<p rend="subhead">२. भूरिदत्तचरिया</p>
+
+<p rend="hangnum" n="11"><hi rend="paranum">११</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="M" n="2.0400"/><pb ed="V" n="2.0386"/><pb ed="P" n="0.0085"/> यदा होमि, भूरिदत्तो महिद्धिको।</p>
+
+<p rend="gathalast">विरूपक्खेन महारञ्‍ञा, देवलोकमगञ्छहं॥</p>
+
+<p rend="hangnum" n="12"><hi rend="paranum">१२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तत्थ पस्सित्वाहं देवे, एकन्तं सुखसमप्पिते।</p>
+
+<p rend="gathalast">तं सग्गगमनत्थाय, सीलब्बतं समादियिं॥</p>
+
+<p rend="hangnum" n="13"><hi rend="paranum">१३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सरीरकिच्‍चं कत्वान, भुत्वा यापनमत्तकं।</p>
+
+<p rend="gathalast">चतुरो अङ्गे अधिट्ठाय, सेमि वम्मिकमुद्धनि॥</p>
+
+<p rend="hangnum" n="14"><hi rend="paranum">१४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘छविया चम्मेन मंसेन, नहारुअट्ठिकेहि वा।</p>
+
+<p rend="gathalast">यस्स एतेन करणीयं, दिन्‍नंयेव हरातु सो॥</p>
+
+<p rend="hangnum" n="15"><hi rend="paranum">१५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘संसितो अकतञ्‍ञुना, आलम्पायनो <note>आलम्बणो (सी॰)</note> ममग्गहि।</p>
+
+<p rend="gathalast">पेळाय पक्खिपित्वान, कीळेति मं तहिं तहिं॥</p>
+
+<p rend="hangnum" n="16"><hi rend="paranum">१६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पेळाय पक्खिपन्तेपि, सम्मद्दन्तेपि पाणिना।</p>
+
+<p rend="gathalast">आलम्पायने <note>आलम्बणे (सी॰)</note> न कुप्पामि, सीलखण्डभया मम॥</p>
+
+<p rend="hangnum" n="17"><hi rend="paranum">१७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सकजीवितपरिच्‍चागो<pb ed="T" n="2.0570"/>, तिणतो लहुको मम।</p>
+
+<p rend="gathalast">सीलवीतिक्‍कमो मय्हं, पथवीउप्पतनं विय॥</p>
+
+<p rend="hangnum" n="18"><hi rend="paranum">१८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘निरन्तरं जातिसतं, चजेय्यं मम जीवितं।</p>
+
+<p rend="gathalast">नेव सीलं पभिन्देय्यं, चतुद्दीपान हेतुपि॥</p>
+
+<p rend="hangnum" n="19"><hi rend="paranum">१९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अपि चाहं सीलरक्खाय, सीलपारमिपूरिया।</p>
+
+<p rend="gathalast">न करोमि चित्ते अञ्‍ञथत्तं, पक्खिपन्तम्पि पेळके’’ति॥</p>
+
+<p rend="centre">भूरिदत्तचरियं दुतियं।</p>
+
+<p rend="subhead">३. चम्पेय्यनागचरिया</p>
+
+<p rend="hangnum" n="20"><hi rend="paranum">२०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं यदा होमि, चम्पेय्यको महिद्धिको।</p>
+
+<p rend="gathalast">तदापि धम्मिको आसिं, सीलब्बतसमप्पितो॥</p>
+
+<p rend="hangnum" n="21"><hi rend="paranum">२१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तदापि <pb ed="V" n="2.0387"/> मं धम्मचारिं, उपवुत्थं उपोसथं।</p>
+
+<p rend="gathalast">अहितुण्डिको गहेत्वान, राजद्वारम्हि कीळति॥</p>
+
+<p rend="hangnum" n="22"><hi rend="paranum">२२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यं <pb ed="M" n="2.0401"/> यं सो वण्णं चिन्तयि, नीलंव पीतलोहितं।</p>
+
+<p rend="gathalast">तस्स चित्तानुवत्तन्तो, होमि चिन्तितसन्‍निभो॥</p>
+
+<p rend="hangnum" n="23"><hi rend="paranum">२३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘थलं <pb ed="P" n="0.0086"/> करेय्यमुदकं, उदकम्पि थलं करे।</p>
+
+<p rend="gathalast">यदिहं तस्स पकुप्पेय्यं, खणेन छारिकं करे॥</p>
+
+<p rend="hangnum" n="24"><hi rend="paranum">२४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदि चित्तवसी हेस्सं, परिहायिस्सामि सीलतो।</p>
+
+<p rend="gathalast">सीलेन परिहीनस्स, उत्तमत्थो न सिज्झति॥</p>
+
+<p rend="hangnum" n="25"><hi rend="paranum">२५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘कामं <pb ed="T" n="2.0571"/> भिज्‍जतुयं कायो, इधेव विकिरीयतु।</p>
+
+<p rend="gathalast">नेव सीलं पभिन्देय्यं, विकिरन्ते भुसं विया’’ति॥</p>
+
+<p rend="centre">चम्पेय्यनागचरियं ततियं।</p>
+
+<p rend="subhead">४. चूळबोधिचरिया</p>
+
+<p rend="hangnum" n="26"><hi rend="paranum">२६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं यदा होमि, चूळबोधि सुसीलवा।</p>
+
+<p rend="gathalast">भवं दिस्वान भयतो, नेक्खम्मं अभिनिक्खमिं॥</p>
+
+<p rend="hangnum" n="27"><hi rend="paranum">२७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘या मे दुतियिका आसि, ब्राह्मणी कनकसन्‍निभा।</p>
+
+<p rend="gathalast">सापि वट्टे अनपेक्खा, नेक्खम्मं अभिनिक्खमि॥</p>
+
+<p rend="hangnum" n="28"><hi rend="paranum">२८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘निरालया छिन्‍नबन्धू, अनपेक्खा कुले गणे।</p>
+
+<p rend="gathalast">चरन्ता गामनिगमं, बाराणसिमुपागमुं॥</p>
+
+<p rend="hangnum" n="29"><hi rend="paranum">२९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तत्थ वसाम निपका, असंसट्ठा कुले गणे।</p>
+
+<p rend="gathalast">निराकुले अप्पसद्दे, राजुय्याने वसामुभो॥</p>
+
+<p rend="hangnum" n="30"><hi rend="paranum">३०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘उय्यानदस्सनं गन्त्वा, राजा अद्दस ब्राह्मणिं।</p>
+
+<p rend="gathalast">उपगम्म ममं पुच्छि, ‘तुय्हेसा का कस्स भरिया’॥</p>
+
+<p rend="hangnum" n="31"><hi rend="paranum">३१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवं वुत्ते अहं तस्स, इदं वचनमब्रविं।</p>
+
+<p rend="gathalast">‘न मय्हं भरिया एसा, सहधम्मा एकसासनी’॥</p>
+
+<p rend="hangnum" n="32"><hi rend="paranum">३२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तिस्सा <pb ed="V" n="2.0388"/> <note>तस्सा (सी॰)</note> सारत्तगधितो, गाहापेत्वान चेटके।</p>
+
+<p rend="gathalast">निप्पीळयन्तो बलसा, अन्तेपुरं पवेसयि॥</p>
+
+<p rend="hangnum" n="33"><hi rend="paranum">३३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ओदपत्तकिया <pb ed="M" n="2.0402"/> मय्हं, सहजा एकसासनी।</p>
+
+<p rend="gathalast">आकड्ढित्वा नयन्तिया, कोपो मे उपपज्‍जथ॥</p>
+
+<p rend="hangnum" n="34"><hi rend="paranum">३४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सह <pb ed="T" n="2.0572"/> कोपे समुप्पन्‍ने, सीलब्बतमनुस्सरिं।</p>
+
+<p rend="gathalast">तत्थेव कोपं निग्गण्हिं, नादासिं वड्ढितूपरि॥</p>
+
+<p rend="hangnum" n="35"><hi rend="paranum">३५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदि नं ब्राह्मणिं कोचि, कोट्टेय्य तिण्हसत्तिया।</p>
+
+<p rend="gathalast">नेव सीलं पभिन्देय्यं, बोधियायेव कारणा॥</p>
+
+<p rend="hangnum" n="36"><hi rend="paranum">३६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न मेसा ब्राह्मणी देस्सा, नपि मे बलं न विज्‍जति।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पियं मय्हं, तस्मा सीलानुरक्खिस’’न्ति॥</p>
+
+<p rend="centre">चूळबोधिचरियं चतुत्थं।</p>
+
+<p rend="subhead">५. महिंसराजचरिया</p>
+
+<p rend="hangnum" n="37"><hi rend="paranum">३७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="P" n="0.0087"/> यदा होमि, महिंसो पवनचारको।</p>
+
+<p rend="gathalast">पवड्ढकायो बलवा, महन्तो भीमदस्सनो॥</p>
+
+<p rend="hangnum" n="38"><hi rend="paranum">३८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पब्भारे गिरिदुग्गे <note>वनदुग्गे (सी॰)</note> च, रुक्खमूले दकासये।</p>
+
+<p rend="gathalast">होतेत्थ ठानं महिंसानं, कोचि कोचि तहिं तहिं॥</p>
+
+<p rend="hangnum" n="39"><hi rend="paranum">३९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘विचरन्तो ब्रहारञ्‍ञे, ठानं अद्दस भद्दकं।</p>
+
+<p rend="gathalast">तं ठानं उपगन्त्वान, तिट्ठामि च सयामि च॥</p>
+
+<p rend="hangnum" n="40"><hi rend="paranum">४०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अथेत्थ कपिमागन्त्वा, पापो अनरियो लहु।</p>
+
+<p rend="gathalast">खन्धे नलाटे भमुके, मुत्तेति ओहनेतितं॥</p>
+
+<p rend="hangnum" n="41"><hi rend="paranum">४१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सकिम्पि दिवसं दुतियं, ततियं चतुत्थम्पि च।</p>
+
+<p rend="gathalast">दूसेति मं सब्बकालं, तेन होमि उपद्दुतो॥</p>
+
+<p rend="hangnum" n="42"><hi rend="paranum">४२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ममं <pb ed="T" n="2.0573"/> उपद्दुतं दिस्वा, यक्खो मं इदमब्रवि।</p>
+
+<p rend="gathalast">‘नासेहेतं छवं पापं, सिङ्गेहि च खुरेहि च’॥</p>
+
+<p rend="hangnum" n="43"><hi rend="paranum">४३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवं <pb ed="V" n="2.0389"/> वुत्ते तदा यक्खे, अहं तं इदमब्रविं।</p>
+
+<p rend="gathalast">‘किं त्वं मक्खेसि कुणपेन, पापेन अनरियेन मं॥</p>
+
+<p rend="hangnum" n="44"><hi rend="paranum">४४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘यदिहं <pb ed="M" n="2.0403"/> तस्स पकुप्पेय्यं, ततो हीनतरो भवे।</p>
+
+<p rend="gathalast">सीलञ्‍च मे पभिज्‍जेय्य, विञ्‍ञू च गरहेय्यु मं॥</p>
+
+<p rend="hangnum" n="45"><hi rend="paranum">४५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘हीळिता जीविता वापि, परिसुद्धेन मतं वरं।</p>
+
+<p rend="gathalast">क्याहं जीवितहेतूपि, काहामिं परहेठनं’॥</p>
+
+<p rend="hangnum" n="46"><hi rend="paranum">४६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ममेवायं मञ्‍ञमानो, अञ्‍ञेपेवं करिस्सति।</p>
+
+<p rend="gathalast">तेव तस्स वधिस्सन्ति, सा मे मुत्ति भविस्सति॥</p>
+
+<p rend="hangnum" n="47"><hi rend="paranum">४७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘हीनमज्झिमउक्‍कट्ठे, सहन्तो अवमानितं।</p>
+
+<p rend="gathalast">एवं लभति सप्पञ्‍ञो, मनसा यथा पत्थित’’न्ति॥</p>
+
+<p rend="centre">महिंसराजचरियं पञ्‍चमं।</p>
+
+<p rend="subhead">६. रुरुराजचरिया</p>
+
+<p rend="hangnum" n="48"><hi rend="paranum">४८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं यदा होमि, सुतत्तकनकसन्‍निभो।</p>
+
+<p rend="gathalast">मिगराजा रुरुनाम, परमसीलसमाहितो॥</p>
+
+<p rend="hangnum" n="49"><hi rend="paranum">४९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘रम्मे पदेसे रमणीये, विवित्ते अमनुस्सके।</p>
+
+<p rend="gathalast">तत्थ वासं उपगञ्छिं, गङ्गाकूले मनोरमे॥</p>
+
+<p rend="hangnum" n="50"><hi rend="paranum">५०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अथ <pb ed="P" n="0.0088"/> उपरि गङ्गाय, धनिकेहि परिपीळितो।</p>
+
+<p rend="gathalast">पुरिसो गङ्गाय पपति, ‘जीवामि वा मरामि वा’॥</p>
+
+<p rend="hangnum" n="51"><hi rend="paranum">५१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘रत्तिन्दिवं <pb ed="T" n="2.0574"/> सो गङ्गाय, वुय्हमानो महोदके।</p>
+
+<p rend="gathalast">रवन्तो करुणं रवं, मज्झे गङ्गाय गच्छति॥</p>
+
+<p rend="hangnum" n="52"><hi rend="paranum">५२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्साहं सद्दं सुत्वान, करुणं परिदेवतो।</p>
+
+<p rend="gathalast">गङ्गाय तीरे ठत्वान, अपुच्छिं ‘कोसि त्वं नरो’॥</p>
+
+<p rend="hangnum" n="53"><hi rend="paranum">५३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सो मे पुट्ठो च ब्याकासि, अत्तनो करणं तदा।</p>
+
+<p rend="gathalast">‘धनिकेहि भीतो तसितो, पक्खन्दोहं महानदिं’॥</p>
+
+<p rend="hangnum" n="54"><hi rend="paranum">५४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स <pb ed="V" n="2.0390"/> कत्वान कारुञ्‍ञं, चजित्वा मम जीवितं।</p>
+
+<p rend="gathalast">पविसित्वा नीहरिं तस्स, अन्धकारम्हि रत्तिया॥</p>
+
+<p rend="hangnum" n="55"><hi rend="paranum">५५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अस्सत्थकालमञ्‍ञाय, तस्साहं इदमब्रविं।</p>
+
+<p rend="gathalast">‘एकं तं वरं याचामि, मा मं कस्सचि पावद’॥</p>
+
+<p rend="hangnum" n="56"><hi rend="paranum">५६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘नगरं <pb ed="M" n="2.0404"/> गन्त्वान आचिक्खि, पुच्छितो धनहेतुको।</p>
+
+<p rend="gathalast">राजानं सो गहेत्वान, उपगञ्छि ममन्तिकं॥</p>
+
+<p rend="hangnum" n="57"><hi rend="paranum">५७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यावता करणं सब्बं, रञ्‍ञो आरोचितं मया।</p>
+
+<p rend="gatha2">राजा सुत्वान वचनं, उसुं तस्स पकप्पयि।</p>
+
+<p rend="gathalast">‘इधेव घातयिस्सामि, मित्तदुब्भिं <note>मित्तदूभिं (सी॰)</note> अनारियं’॥</p>
+
+<p rend="hangnum" n="58"><hi rend="paranum">५८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तमहं अनुरक्खन्तो, निम्मिनिं मम अत्तना।</p>
+
+<p rend="gathalast">‘तिट्ठतेसो महाराज, कामकारो भवामि ते’॥</p>
+
+<p rend="hangnum" n="59"><hi rend="paranum">५९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अनुरक्खिं मम सीलं, नारक्खिं मम जीवितं।</p>
+
+<p rend="gathalast">सीलवा हि तदा आसिं, बोधियायेव कारणा’’ति॥</p>
+
+<p rend="centre">रुरुराजचरियं छट्ठं।</p>
+
+<p rend="subhead">७. मातङ्गचरिया</p>
+
+<p rend="hangnum" n="60"><hi rend="paranum">६०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="T" n="2.0575"/> यदा होमि, जटिलो उग्गतापनो।</p>
+
+<p rend="gathalast">मातङ्गो नाम नामेन, सीलवा सुसमाहितो॥</p>
+
+<p rend="hangnum" n="61"><hi rend="paranum">६१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अहञ्‍च ब्राह्मणो एको, गङ्गाकूले वसामुभो।</p>
+
+<p rend="gathalast">अहं वसामि उपरि, हेट्ठा वसति ब्राह्मणो॥</p>
+
+<p rend="hangnum" n="62"><hi rend="paranum">६२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘विचरन्तो अनुकूलम्हि, उद्धं मे अस्समद्दस।</p>
+
+<p rend="gathalast">तत्थ मं परिभासेत्वा, अभिसपि मुद्धफालनं॥</p>
+
+<p rend="hangnum" n="63"><hi rend="paranum">६३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदिहं तस्स पकुप्पेय्यं, यदि सीलं न गोपये।</p>
+
+<p rend="gathalast">ओलोकेत्वानहं तस्स, करेय्यं छारिकं विय॥</p>
+
+<p rend="hangnum" n="64"><hi rend="paranum">६४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यं <pb ed="P" n="0.0089"/> सो तदा मं अभिसपि, कुपितो दुट्ठमानसो।</p>
+
+<p rend="gathalast">तस्सेव मत्थके निपति, योगेन तं पमोचयिं॥</p>
+
+<p rend="hangnum" n="65"><hi rend="paranum">६५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अनुरक्खिं <pb ed="V" n="2.0391"/> मम सीलं, नारक्खिं मम जीवितं।</p>
+
+<p rend="gathalast">सीलवा हि तदा आसिं, बोधियायेव कारणा’’ति॥</p>
+
+<p rend="centre">मातङ्गचरियं सत्तमं।</p>
+
+<p rend="subhead">८. धम्मदेवपुत्तचरिया</p>
+
+<p rend="hangnum" n="66"><hi rend="paranum">६६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="M" n="2.0405"/> यदा होमि, महापक्खो महिद्धिको।</p>
+
+<p rend="gathalast">धम्मो नाम महायक्खो, सब्बलोकानुकम्पको॥</p>
+
+<p rend="hangnum" n="67"><hi rend="paranum">६७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘दसकुसलकम्मपथे<pb ed="T" n="2.0576"/>, समादपेन्तो महाजनं।</p>
+
+<p rend="gathalast">चरामि गामनिगमं, समित्तो सपरिज्‍जनो॥</p>
+
+<p rend="hangnum" n="68"><hi rend="paranum">६८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पापो कदरियो यक्खो, दीपेन्तो दस पापके।</p>
+
+<p rend="gathalast">सोपेत्थ महिया चरति, समित्तो सपरिज्‍जनो॥</p>
+
+<p rend="hangnum" n="69"><hi rend="paranum">६९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘धम्मवादी अधम्मो च, उभो पच्‍चनिका मयं।</p>
+
+<p rend="gathalast">धुरे धुरं घट्टयन्ता, समिम्हा पटिपथे उभो॥</p>
+
+<p rend="hangnum" n="70"><hi rend="paranum">७०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘कलहो वत्तती भेस्मा, कल्याणपापकस्स च।</p>
+
+<p rend="gathalast">मग्गा ओक्‍कमनत्थाय, महायुद्धो उपट्ठितो॥</p>
+
+<p rend="hangnum" n="71"><hi rend="paranum">७१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदिहं तस्स कुप्पेय्यं, यदि भिन्दे तपोगुणं।</p>
+
+<p rend="gathalast">सहपरिजनं तस्स, रजभूतं करेय्यहं॥</p>
+
+<p rend="hangnum" n="72"><hi rend="paranum">७२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अपिचाहं सीलरक्खाय, निब्बापेत्वान मानसं।</p>
+
+<p rend="gathalast">सह जनेनोक्‍कमित्वा, पथं पापस्स दासहं॥</p>
+
+<p rend="hangnum" n="73"><hi rend="paranum">७३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सह पथतो ओक्‍कन्ते, कत्वा चित्तस्स निब्बुतिं।</p>
+
+<p rend="gathalast">विवरं अदासि पथवी, पापयक्खस्स तावदे’’ति॥</p>
+
+<p rend="centre">धम्मदेवपुत्तचरियं अट्ठमं।</p>
+
+<p rend="subhead">९. अलीनसत्तुचरिया</p>
+
+<p rend="hangnum" n="74"><hi rend="paranum">७४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पञ्‍चालरट्ठे <pb ed="V" n="2.0392"/><pb ed="P" n="0.0090"/> नगरवरे, कपिलायं <note>कम्पिलायं (सी॰), कप्पिलायं (स्या॰)</note> पुरुत्तमे।</p>
+
+<p rend="gathalast">राजा जयद्दिसो नाम, सीलगुणमुपागतो॥</p>
+
+<p rend="hangnum" n="75"><hi rend="paranum">७५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स <pb ed="T" n="2.0577"/> रञ्‍ञो अहं पुत्तो, सुतधम्मो सुसीलवा।</p>
+
+<p rend="gathalast">अलीनसत्तो गुणवा, अनुरक्खपरिजनो सदा॥</p>
+
+<p rend="hangnum" n="76"><hi rend="paranum">७६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पिता मे मिगवं गन्त्वा, पोरिसादं उपागमि।</p>
+
+<p rend="gathalast">सो मे पितुमग्गहेसि, ‘भक्खोसि मम मा चलि’॥</p>
+
+<p rend="hangnum" n="77"><hi rend="paranum">७७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स <pb ed="M" n="2.0406"/> तं वचनं सुत्वा, भीतो तसितवेधितो।</p>
+
+<p rend="gathalast">ऊरुक्खम्भो अहु तस्स, दिस्वान पोरिसादकं॥</p>
+
+<p rend="hangnum" n="78"><hi rend="paranum">७८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मिगवं गहेत्वा मुञ्‍चस्सु, कत्वा आगमनं पुन।</p>
+
+<p rend="gathalast">ब्राह्मणस्स धनं दत्वा, पिता आमन्तयी ममं॥</p>
+
+<p rend="hangnum" n="79"><hi rend="paranum">७९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘रज्‍जं पुत्त पटिपज्‍ज, मा पमज्‍जि पुरं इदं।</p>
+
+<p rend="gathalast">कतं मे पोरिसादेन, मम आगमनं पुन’॥</p>
+
+<p rend="hangnum" n="80"><hi rend="paranum">८०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मातापितू च वन्दित्वा, निम्मिनित्वान अत्तना।</p>
+
+<p rend="gathalast">निक्खिपित्वा धनुं खग्गं, पोरिसादं उपागमिं॥</p>
+
+<p rend="hangnum" n="81"><hi rend="paranum">८१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ससत्थहत्थूपगतं, कदाचि सो तसिस्सति।</p>
+
+<p rend="gathalast">तेन भिज्‍जिस्सति सीलं, परित्तासं <note>परितासं (सी॰)</note> कते मयि॥</p>
+
+<p rend="hangnum" n="82"><hi rend="paranum">८२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सीलखण्डभया मय्हं, तस्स देस्सं न ब्याहरिं।</p>
+
+<p rend="gathalast">मेत्तचित्तो हितवादी, इदं वचनमब्रविं॥</p>
+
+<p rend="hangnum" n="83"><hi rend="paranum">८३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘उज्‍जालेहि महाअग्गिं, पपतिस्सामि रुक्खतो।</p>
+
+<p rend="gathalast">त्वं पक्‍ककालमञ्‍ञाय <note>सुपक्‍ककालमञ्‍ञाय (पी॰)</note>, भक्खय मं पितामह’॥</p>
+
+<p rend="hangnum" n="84"><hi rend="paranum">८४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘इति सीलवतं हेतु, नारक्खिं मम जीवितं।</p>
+
+<p rend="gathalast">पब्बाजेसिं चहं तस्स, सदा पाणातिपातिक’’न्ति॥</p>
+
+<p rend="centre">अलीनसत्तुचरियं नवमं।</p>
+
+<p rend="subhead">१०. सङ्खपालचरिया</p>
+
+<p rend="hangnum" n="85"><hi rend="paranum">८५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="T" n="2.0578"/><pb ed="V" n="2.0393"/><pb ed="P" n="0.0091"/> यदा होमि, सङ्खपालो महिद्धिको।</p>
+
+<p rend="gathalast">दाठावुधो घोरविसो, द्विजिव्हो उरगाधिभू॥</p>
+
+<p rend="hangnum" n="86"><hi rend="paranum">८६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘चतुप्पथे महामग्गे, नानाजनसमाकुले।</p>
+
+<p rend="gathalast">चतुरो अङ्गे अधिट्ठाय, तत्थ वासमकप्पयिं॥</p>
+
+<p rend="hangnum" n="87"><hi rend="paranum">८७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘छविया चम्मेन मंसेन, नहारुअट्ठिकेहि वा।</p>
+
+<p rend="gathalast">यस्स एतेन करणीयं, दिन्‍नंयेव हरातु सो॥</p>
+
+<p rend="hangnum" n="88"><hi rend="paranum">८८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अद्दसंसु <pb ed="M" n="2.0407"/> भोजपुत्ता, खरा लुद्दा अकारुणा।</p>
+
+<p rend="gathalast">उपगञ्छुं ममं तत्थ, दण्डमुग्गरपाणिनो॥</p>
+
+<p rend="hangnum" n="89"><hi rend="paranum">८९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘नासाय विनिविज्झित्वा, नङ्गुट्ठे पिट्ठिकण्टके।</p>
+
+<p rend="gathalast">काजे आरोपयित्वान, भोजपुत्ता हरिंसु मं॥</p>
+
+<p rend="hangnum" n="90"><hi rend="paranum">९०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ससागरन्तं पथविं, सकाननं सपब्बतं।</p>
+
+<p rend="gathalast">इच्छमानो चहं तत्थ, नासावातेन झापये॥</p>
+
+<p rend="hangnum" n="91"><hi rend="paranum">९१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सूलेहि विनिविज्झन्ते, कोट्टयन्तेपि सत्तिभि।</p>
+
+<p rend="gathalast">भोजपुत्ते न कुप्पामि, एसा मे सीलपारमी’’ति॥</p>
+
+<p rend="centre">सङ्खपालचरियं दसमं।</p>
+
+<p rend="centre">हत्थिनागवग्गो दुतियो।</p>
+
+<p rend="bodytext">तस्सुद्दानं –</p>
+
+<p rend="gatha1">हत्थिनागो <pb ed="T" n="2.0579"/> भूरिदत्तो, चम्पेय्यो बोधि महिंसो।</p>
+
+<p rend="gathalast">रुरु मातङ्गो धम्मो च, अत्रजो च जयद्दिसो॥</p>
+
+<p rend="gatha1">एते नव सीलबला, परिक्खारा पदेसिका।</p>
+
+<p rend="gathalast">जीवितं परिरक्खित्वा, सीलानि अनुरक्खिसं॥</p>
+
+<p rend="gatha1">सङ्खपालस्स मे सतो, सब्बकालम्पि जीवितं।</p>
+
+<p rend="gathalast">यस्स कस्सचि निय्यत्तं, तस्मा सा सीलपारमीति॥</p>
+
+<trailer rend="centre">सीलपारमिनिद्देसो निट्ठितो।</trailer>
+</div>
+
+<div id="kn13_3" n="kn13_3" type="vagga">
+<head rend="chapter">३. युधञ्‍जयवग्गो</head>
+
+<p rend="subhead">१. युधञ्‍जयचरिया</p>
+
+<p rend="hangnum" n="1"><hi rend="paranum">१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदाहं <pb ed="M" n="2.0408"/><pb ed="V" n="2.0394"/><pb ed="P" n="0.0092"/> अमितयसो, राजपुत्तो युधञ्‍जयो।</p>
+
+<p rend="gathalast">उस्सावबिन्दुं सूरियातपे, पतितं दिस्वान संविजिं॥</p>
+
+<p rend="hangnum" n="2"><hi rend="paranum">२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तञ्‍ञेवाधिपतिं कत्वा, संवेगमनुब्रूहयिं।</p>
+
+<p rend="gathalast">मातापितू च वन्दित्वा, पब्बज्‍जमनुयाचहं॥</p>
+
+<p rend="hangnum" n="3"><hi rend="paranum">३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘याचन्ति मं पञ्‍जलिका, सनेगमा सरट्ठका।</p>
+
+<p rend="gathalast">‘अज्‍जेव पुत्त पटिपज्‍ज, इद्धं फीतं महामहिं’॥</p>
+
+<p rend="hangnum" n="4"><hi rend="paranum">४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सराजके सहोरोधे, सनेगमे सरट्ठके।</p>
+
+<p rend="gathalast">करुणं परिदेवन्ते, अनपेक्खोव परिच्‍चजिं॥</p>
+
+<p rend="hangnum" n="5"><hi rend="paranum">५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘केवलं पथविं रज्‍जं, ञातिपरिजनं यसं।</p>
+
+<p rend="gathalast">चजमानो न चिन्तेसिं, बोधियायेव कारणा॥</p>
+
+<p rend="hangnum" n="6"><hi rend="paranum">६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मातापिता न मे देस्सा, नपि मे देस्सं महायसं।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पियं मय्हं, तस्मा रज्‍जं परिच्‍चजि’’न्ति॥</p>
+
+<p rend="centre">युधञ्‍जयचरियं पठमं।</p>
+
+<p rend="subhead">२. सोमनस्सचरिया</p>
+
+<p rend="hangnum" n="7"><hi rend="paranum">७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="T" n="2.0580"/> यदा होमि, इन्दपत्थे पुरुत्तमे।</p>
+
+<p rend="gathalast">कामितो दयितो पुत्तो, सोमनस्सोति विस्सुतो॥</p>
+
+<p rend="hangnum" n="8"><hi rend="paranum">८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सीलवा गुणसम्पन्‍नो, कल्याणपटिभानवा।</p>
+
+<p rend="gathalast">वुड्ढापचायी हिरीमा, सङ्गहेसु च कोविदो॥</p>
+
+<p rend="hangnum" n="9"><hi rend="paranum">९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स <pb ed="V" n="2.0395"/> रञ्‍ञो पतिकरो, अहोसि कुहकतापसो।</p>
+
+<p rend="gathalast">आरामं मालावच्छञ्‍च, रोपयित्वान जीवति॥</p>
+
+<p rend="hangnum" n="10"><hi rend="paranum">१०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तमहं <pb ed="P" n="0.0093"/> दिस्वान कुहकं, थुसरासिंव अतण्डुलं।</p>
+
+<p rend="gathalast">दुमंव अन्तो सुसिरं, कदलिंव असारकं॥</p>
+
+<p rend="hangnum" n="11"><hi rend="paranum">११</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘नत्थिमस्स <pb ed="M" n="2.0409"/> सतं धम्मो, सामञ्‍ञापगतो अयं।</p>
+
+<p rend="gathalast">हिरीसुक्‍कधम्मजहितो, जीवितवुत्तिकारणा॥</p>
+
+<p rend="hangnum" n="12"><hi rend="paranum">१२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘कुपितो अहु <note>अहोसि (सी॰), आसि (स्या॰)</note> पच्‍चन्तो, अटवीहि परन्तिहि।</p>
+
+<p rend="gathalast">तं निसेधेतुं गच्छन्तो, अनुसासि पिता ममं॥</p>
+
+<p rend="hangnum" n="13"><hi rend="paranum">१३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘मा पमज्‍जि तुवं तात, जटिलं उग्गतापनं।</p>
+
+<p rend="gathalast">यदिच्छकं पवत्तेहि, सब्बकामददो हि सो’॥</p>
+
+<p rend="hangnum" n="14"><hi rend="paranum">१४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तमहं गन्त्वानुपट्ठानं, इदं वचनमब्रविं।</p>
+
+<p rend="gathalast">‘कच्‍चि ते गहपति कुसलं, किं वा ते आहरीयतु’॥</p>
+
+<p rend="hangnum" n="15"><hi rend="paranum">१५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तेन सो कुपितो आसि, कुहको माननिस्सितो।</p>
+
+<p rend="gathalast">‘घातापेमि तुवं अज्‍ज, रट्ठा पब्बाजयामि वा’॥</p>
+
+<p rend="hangnum" n="16"><hi rend="paranum">१६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘निसेधयित्वा <pb ed="T" n="2.0581"/> पच्‍चन्तं, राजा कुहकमब्रवि।</p>
+
+<p rend="gathalast">‘कच्‍चि ते भन्ते खमनीयं, सम्मानो ते पवत्तितो’॥</p>
+
+<p rend="hangnum" n="17"><hi rend="paranum">१७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स आचिक्खती पापो, कुमारो यथा नासियो।</p>
+
+<p rend="gathalast">तस्स तं वचनं सुत्वा, आणापेसि महीपति॥</p>
+
+<p rend="hangnum" n="18"><hi rend="paranum">१८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘सीसं तत्थेव छिन्दित्वा, कत्वान चतुखण्डिकं।</p>
+
+<p rend="gathalast">रथिया रथियं दस्सेथ, सा गति जटिलहीळिता’॥</p>
+
+<p rend="hangnum" n="19"><hi rend="paranum">१९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तत्थ कारणिका गन्त्वा, चण्डा लुद्दा अकारुणा।</p>
+
+<p rend="gathalast">मातुअङ्के निसिन्‍नस्स, आकड्ढित्वा नयन्ति मं॥</p>
+
+<p rend="hangnum" n="20"><hi rend="paranum">२०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तेसाहं एवमवचं, बन्धतं गाळ्हबन्धनं।</p>
+
+<p rend="gathalast">‘रञ्‍ञो दस्सेथ मं खिप्पं, राजकिरियानि अत्थि मे’॥</p>
+
+<p rend="hangnum" n="21"><hi rend="paranum">२१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ते मं रञ्‍ञो दस्सयिंसु, पापस्स पापसेविनो।</p>
+
+<p rend="gathalast">दिस्वान तं सञ्‍ञापेसिं, ममञ्‍च वसमानयिं॥</p>
+
+<p rend="hangnum" n="22"><hi rend="paranum">२२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सो मं तत्थ खमापेसि, महारज्‍जमदासि मे।</p>
+
+<p rend="gathalast">सोहं तमं दालयित्वा, पब्बजिं अनगारियं॥</p>
+
+<p rend="hangnum" n="23"><hi rend="paranum">२३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न <pb ed="V" n="2.0396"/> मे देस्सं महारज्‍जं, कामभोगो न देस्सियो।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पियं मय्हं, तस्मा रज्‍जं परिच्‍चजि’’न्ति॥</p>
+
+<p rend="centre">सोमनस्सचरियं दुतियं।</p>
+
+<p rend="subhead">३. अयोघरचरिया</p>
+
+<p rend="hangnum" n="24"><hi rend="paranum">२४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="T" n="2.0582"/><pb ed="M" n="2.0410"/><pb ed="P" n="0.0094"/> यदा होमि, कासिराजस्स अत्रजो।</p>
+
+<p rend="gathalast">अयोघरम्हि संवड्ढो, नामेनासि अयोघरो॥</p>
+
+<p rend="hangnum" n="25"><hi rend="paranum">२५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘दुक्खेन जीवितो लद्धो, संपीळे पतिपोसितो।</p>
+
+<p rend="gathalast">अज्‍जेव पुत्त पटिपज्‍ज, केवलं वसुधं इमं॥</p>
+
+<p rend="hangnum" n="26"><hi rend="paranum">२६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सरट्ठकं सनिगमं, सजनं वन्दित्व खत्तियं।</p>
+
+<p rend="gathalast">अञ्‍जलिं पग्गहेत्वान, इदं वचनमब्रविं॥</p>
+
+<p rend="hangnum" n="27"><hi rend="paranum">२७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘ये केचि महिया सत्ता, हीनमुक्‍कट्ठमज्झिमा।</p>
+
+<p rend="gathalast">निरारक्खा सके गेहे, वड्ढन्ति सकञातिभि॥</p>
+
+<p rend="hangnum" n="28"><hi rend="paranum">२८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘इदं लोके उत्तरियं, संपीळे मम पोसनं।</p>
+
+<p rend="gathalast">अयोघरम्हि संवड्ढो, अप्पभे चन्दसूरिये॥</p>
+
+<p rend="hangnum" n="29"><hi rend="paranum">२९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘पूतिकुणपसम्पुण्णा, मुच्‍चित्वा मातु कुच्छितो।</p>
+
+<p rend="gathalast">ततो घोरतरे दुक्खे, पुन पक्खित्तयोघरे॥</p>
+
+<p rend="hangnum" n="30"><hi rend="paranum">३०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘यदिहं तादिसं पत्वा, दुक्खं परमदारुणं।</p>
+
+<p rend="gathalast">रज्‍जेसु यदि रज्‍जामि <note>रञ्‍जामि (सी॰)</note>, पापानं उत्तमो सियं॥</p>
+
+<p rend="hangnum" n="31"><hi rend="paranum">३१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘उक्‍कण्ठितोम्हि कायेन, रज्‍जेनम्हि अनत्थिको।</p>
+
+<p rend="gathalast">निब्बुतिं परियेसिस्सं, यत्थ मं मच्‍चु न मद्दिये’॥</p>
+
+<p rend="hangnum" n="32"><hi rend="paranum">३२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवाहं चिन्तयित्वान, विरवन्ते महाजने।</p>
+
+<p rend="gathalast">नागोव बन्धनं छेत्वा, पाविसिं काननं वनं॥</p>
+
+<p rend="hangnum" n="33"><hi rend="paranum">३३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मातापिता <pb ed="T" n="2.0583"/><pb ed="V" n="2.0397"/> न मे देस्सा, नपि मे देस्सं महायसं।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पियं मय्हं, तस्मा रज्‍जं परिच्‍चजि’’न्ति॥</p>
+
+<p rend="centre">अयोघरचरियं ततियं।</p>
+
+<p rend="subhead">४. भिसचरिया</p>
+
+<p rend="hangnum" n="34"><hi rend="paranum">३४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं यदा होमि, कासीनं पुरवरुत्तमे।</p>
+
+<p rend="gathalast">भगिनी च भातरो सत्त, निब्बत्ता सोत्थिये कुले॥</p>
+
+<p rend="hangnum" n="35"><hi rend="paranum">३५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एतेसं <pb ed="M" n="2.0411"/> पुब्बजो आसिं, हिरीसुक्‍कमुपागतो।</p>
+
+<p rend="gathalast">भवं दिस्वान भयतो, नेक्खम्माभिरतो अहं॥</p>
+
+<p rend="hangnum" n="36"><hi rend="paranum">३६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मातापितूहि <pb ed="P" n="0.0095"/> पहिता, सहाया एकमानसा।</p>
+
+<p rend="gathalast">कामेहि मं निमन्तेन्ति, ‘कुलवंसं धरेहि’ति॥</p>
+
+<p rend="hangnum" n="37"><hi rend="paranum">३७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यं तेसं वचनं वुत्तं, गिहीधम्मे सुखावहं।</p>
+
+<p rend="gathalast">तं मे अहोसि कठिनं, तत्त <note>सन्तत्त (क॰)</note> फालसमं विय॥</p>
+
+<p rend="hangnum" n="38"><hi rend="paranum">३८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ते मं तदा उक्खिपन्तं, पुच्छिंसु पत्थितं मम।</p>
+
+<p rend="gathalast">‘किं त्वं पत्थयसे सम्म, यदि कामे न भुञ्‍जसि’॥</p>
+
+<p rend="hangnum" n="39"><hi rend="paranum">३९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तेसाहं एवमवचं, अत्थकामो हितेसिनं।</p>
+
+<p rend="gathalast">‘नाहं पत्थेमि गिहीभावं, नेक्खम्माभिरतो अहं’॥</p>
+
+<p rend="hangnum" n="40"><hi rend="paranum">४०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ते मय्हं वचनं सुत्वा, पितुमातु च सावयुं।</p>
+
+<p rend="gathalast">मातापिता एवमाहु, ‘सब्बेव पब्बजाम भो’॥</p>
+
+<p rend="hangnum" n="41"><hi rend="paranum">४१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘उभो <pb ed="T" n="2.0584"/> मातापिता मय्हं, भगिनी च सत्त भातरो।</p>
+
+<p rend="gathalast">अमितधनं छड्डयित्वा, पाविसिम्हा महावन’’न्ति॥</p>
+
+<p rend="centre">भिसचरियं चतुत्थं।</p>
+
+<p rend="subhead">५. सोणपण्डितचरिया</p>
+
+<p rend="hangnum" n="42"><hi rend="paranum">४२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="V" n="2.0398"/> यदा होमि, नगरे ब्रह्मवड्ढने।</p>
+
+<p rend="gathalast">तत्थ कुलवरे सेट्ठे, महासाले अजायहं॥</p>
+
+<p rend="hangnum" n="43"><hi rend="paranum">४३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तदापि लोकं दिस्वान, अन्धीभूतं तमोत्थटं।</p>
+
+<p rend="gathalast">चित्तं भवतो पतिकुटति, तुत्तवेगहतं विय॥</p>
+
+<p rend="hangnum" n="44"><hi rend="paranum">४४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘दिस्वान विविधं पापं, एवं चिन्तेसहं तदा।</p>
+
+<p rend="gathalast">‘कदाहं गेहा निक्खम्म, पविसिस्सामि काननं’॥</p>
+
+<p rend="hangnum" n="45"><hi rend="paranum">४५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तदापि मं निमन्तेसुं, कामभोगेहि ञातयो।</p>
+
+<p rend="gathalast">तेसम्पि छन्दमाचिक्खिं, ‘मा निमन्तेथ तेहि मं’॥</p>
+
+<p rend="hangnum" n="46"><hi rend="paranum">४६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यो <pb ed="M" n="2.0412"/> मे कनिट्ठको भाता, नन्दो नामासि पण्डितो।</p>
+
+<p rend="gathalast">सोपि मं अनुसिक्खन्तो, पब्बज्‍जं समरोचयि॥</p>
+
+<p rend="hangnum" n="47"><hi rend="paranum">४७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अहं सोणो च नन्दो च, उभो मातापिता मम।</p>
+
+<p rend="gathalast">तदापि भोगे छड्डेत्वा, पाविसिम्हा महावन’’न्ति॥</p>
+
+<p rend="centre">सोणपण्डितचरियं पञ्‍चमं।</p>
+
+<p rend="subhead">६. तेमियचरिया</p>
+
+<p rend="hangnum" n="48"><hi rend="paranum">४८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="T" n="2.0585"/><pb ed="P" n="0.0096"/> यदा होमि, कासिराजस्स अत्रजो।</p>
+
+<p rend="gathalast">मूगपक्खोति नामेन, तेमियोति वदन्ति मं॥</p>
+
+<p rend="hangnum" n="49"><hi rend="paranum">४९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सोळसित्थिसहस्सानं, न विज्‍जति पुमो तदा <note>सदा (सी॰)</note>।</p>
+
+<p rend="gathalast">अहोरत्तानं अच्‍चयेन, निब्बत्तो अहमेकको॥</p>
+
+<p rend="hangnum" n="50"><hi rend="paranum">५०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘किच्छा लद्धं पियं पुत्तं, अभिजातं जुतिन्धरं।</p>
+
+<p rend="gathalast">सेतच्छत्तं धारयित्वान, सयने पोसेति मं पिता॥</p>
+
+<p rend="hangnum" n="51"><hi rend="paranum">५१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘निद्दायमानो सयनवरे, पबुज्झित्वानहं तदा।</p>
+
+<p rend="gathalast">अद्दसं पण्डरं छत्तं, येनाहं निरयं गतो॥</p>
+
+<p rend="hangnum" n="52"><hi rend="paranum">५२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सह <pb ed="V" n="2.0399"/> दिट्ठस्स मे छत्तं, तासो उप्पज्‍जि भेरवो।</p>
+
+<p rend="gathalast">विनिच्छयं समापन्‍नो, ‘कथाहं इमं मुञ्‍चिस्सं’॥</p>
+
+<p rend="hangnum" n="53"><hi rend="paranum">५३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुब्बसालोहिता मय्हं, देवता अत्थकामिनी।</p>
+
+<p rend="gathalast">सा मं दिस्वान दुक्खितं, तीसु ठानेसु योजयि॥</p>
+
+<p rend="hangnum" n="54"><hi rend="paranum">५४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘मा पण्डिच्‍चयं विभावय, बालमतो भव सब्बपाणिनं।</p>
+
+<p rend="gathalast">सब्बो तं जनो ओचिनायतु, एवं तव अत्थो भविस्सति’॥</p>
+
+<p rend="hangnum" n="55"><hi rend="paranum">५५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवं वुत्तायहं तस्सा, इदं वचनमब्रविं।</p>
+
+<p rend="gathalast">‘करोमि ते तं वचनं, यं त्वं भणसि देवते।</p>
+
+<p rend="gathalast">अत्थकामासि मे अम्म, हितकामासि देवते’॥</p>
+
+<p rend="hangnum" n="56"><hi rend="paranum">५६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्साहं वचनं सुत्वा, सागरेव थलं लभिं।</p>
+
+<p rend="gathalast">हट्ठो <pb ed="T" n="2.0586"/> संविग्गमानसो, तयो अङ्गे अधिट्ठहिं॥</p>
+
+<p rend="hangnum" n="57"><hi rend="paranum">५७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मूगो <pb ed="M" n="2.0413"/> अहोसिं बधिरो, पक्खो गतिविवज्‍जितो।</p>
+
+<p rend="gathalast">एते अङ्गे अधिट्ठाय, वस्सानि सोळसं वसिं॥</p>
+
+<p rend="hangnum" n="58"><hi rend="paranum">५८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ततो मे हत्थपादे च, जिव्हं सोतञ्‍च मद्दिय।</p>
+
+<p rend="gathalast">अनूनतं मे पस्सित्वा, ‘काळकण्णी’ति निन्दिसुं॥</p>
+
+<p rend="hangnum" n="59"><hi rend="paranum">५९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ततो जानपदा सब्बे, सेनापतिपुरोहिता।</p>
+
+<p rend="gathalast">सब्बे एकमना हुत्वा, छड्डनं अनुमोदिसुं॥</p>
+
+<p rend="hangnum" n="60"><hi rend="paranum">६०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सोहं तेसं मतिं सुत्वा, हट्ठो संविग्गमानसो।</p>
+
+<p rend="gathalast">यस्सत्थाय तपोचिण्णो, सो मे अत्थो समिज्झथ॥</p>
+
+<p rend="hangnum" n="61"><hi rend="paranum">६१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न्हापेत्वा अनुलिम्पित्वा, वेठेत्वा राजवेठनं।</p>
+
+<p rend="gathalast">छत्तेन अभिसिञ्‍चित्वा, कारेसुं पुरं पदक्खिणं॥</p>
+
+<p rend="hangnum" n="62"><hi rend="paranum">६२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सत्ताहं धारयित्वान, उग्गते रविमण्डले।</p>
+
+<p rend="gathalast">रथेन मं नीहरित्वा, सारथी वनमुपागमि॥</p>
+
+<p rend="hangnum" n="63"><hi rend="paranum">६३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एकोकासे <pb ed="P" n="0.0097"/> रथं कत्वा, सज्‍जस्सं हत्थमुच्‍चितो <note>हत्थमुञ्‍चितो (सी॰ स्या॰)</note>।</p>
+
+<p rend="gathalast">सारथी खणती कासुं, निखातुं पथविया ममं॥</p>
+
+<p rend="hangnum" n="64"><hi rend="paranum">६४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अधिट्ठितमधिट्ठानं, तज्‍जेन्तो विविधकारणा।</p>
+
+<p rend="gathalast">न भिन्दिं तमधिट्ठानं, बोधियायेव कारणा॥</p>
+
+<p rend="hangnum" n="65"><hi rend="paranum">६५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मातापिता न मे देस्सा, अत्ता मे न च देस्सियो।</p>
+
+<p rend="gathalast">सब्बञ्‍ञुतं पियं मय्हं, तस्मा वतमधिट्ठहिं॥</p>
+
+<p rend="hangnum" n="66"><hi rend="paranum">६६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एते <pb ed="T" n="2.0587"/><pb ed="V" n="2.0400"/> अङ्गे अधिट्ठाय, वस्सानि सोळसं वसिं।</p>
+
+<p rend="gathalast">अधिट्ठानेन मे समो नत्थि, एसा मे अधिट्ठानपारमी’’ति॥</p>
+
+<p rend="centre">तेमियचरियं छट्ठं।</p>
+
+<p rend="subhead">७. कपिराजचरिया</p>
+
+<p rend="hangnum" n="67"><hi rend="paranum">६७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यदा अहं कपि आसिं, नदीकूले दरीसये।</p>
+
+<p rend="gathalast">पीळितो सुसुमारेन, गमनं न लभामहं॥</p>
+
+<p rend="hangnum" n="68"><hi rend="paranum">६८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘यम्होकासे <pb ed="M" n="2.0414"/> अहं ठत्वा, ओरा पारं पतामहं।</p>
+
+<p rend="gathalast">तत्थच्छि सत्तु वधको, कुम्भीलो लुद्ददस्सनो॥</p>
+
+<p rend="hangnum" n="69"><hi rend="paranum">६९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सो मं असंसि ‘एही’ति, ‘अहंपेमी’ति तं वतिं।</p>
+
+<p rend="gathalast">तस्स मत्थकमक्‍कम्म, परकूले पतिट्ठहिं॥</p>
+
+<p rend="hangnum" n="70"><hi rend="paranum">७०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न तस्स अलिकं भणितं, यथा वाचं अकासहं।</p>
+
+<p rend="gathalast">सच्‍चेन मे समो नत्थि, एसा मे सच्‍चपारमी’’ति॥</p>
+
+<p rend="centre">कपिराजचरियं सत्तमं।</p>
+
+<p rend="subhead">८. सच्‍चतापसचरिया</p>
+
+<p rend="hangnum" n="71"><hi rend="paranum">७१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं यदा होमि, तापसो सच्‍चसव्हयो।</p>
+
+<p rend="gathalast">सच्‍चेन लोकं पालेसिं, समग्गं जनमकासह’’न्ति॥</p>
+
+<p rend="centre">सच्‍चतापसचरियं अट्ठमं।</p>
+
+<p rend="subhead">९. वट्टपोतकचरिया</p>
+
+<p rend="hangnum" n="72"><hi rend="paranum">७२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="T" n="2.0588"/><pb ed="V" n="2.0401"/><pb ed="P" n="0.0098"/> यदा होमि, मगधे वट्टपोतको।</p>
+
+<p rend="gathalast">अजातपक्खो तरुणो, मंसपेसि कुलावके॥</p>
+
+<p rend="hangnum" n="73"><hi rend="paranum">७३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘मुखतुण्डकेनाहरित्वा <note>मुखतुण्डेनाहरित्वा (सी॰)</note>, माता पोसयती ममं।</p>
+
+<p rend="gathalast">तस्सा फस्सेन जीवामि, नत्थि मे कायिकं बलं॥</p>
+
+<p rend="hangnum" n="74"><hi rend="paranum">७४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘संवच्छरे गिम्हसमये, दवडाहो <note>वनदाहो (क॰)</note> पदिप्पति।</p>
+
+<p rend="gathalast">उपगच्छति अम्हाकं, पावको कण्हवत्तनी॥</p>
+
+<p rend="hangnum" n="75"><hi rend="paranum">७५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘धमधमा इतिएवं, सद्दायन्तो महासिखी।</p>
+
+<p rend="gathalast">अनुपुब्बेन झापेन्तो, अग्गि मममुपागमि॥</p>
+
+<p rend="hangnum" n="76"><hi rend="paranum">७६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अग्गिवेगभयातीता, तसिता मातापिता मम।</p>
+
+<p rend="gathalast">कुलावके मं छड्डेत्वा, अत्तानं परिमोचयुं॥</p>
+
+<p rend="hangnum" n="77"><hi rend="paranum">७७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पादे <pb ed="M" n="2.0415"/> पक्खे पजहामि, नत्थि मे कायिकं बलं।</p>
+
+<p rend="gathalast">सोहं अगतिको तत्थ, एवं चिन्तेसहं तदा॥</p>
+
+<p rend="hangnum" n="78"><hi rend="paranum">७८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘येसाहं उपधावेय्यं, भीतो तसितवेधितो।</p>
+
+<p rend="gathalast">ते मं ओहाय पक्‍कन्ता, कथं मे अज्‍ज कातवे॥</p>
+
+<p rend="hangnum" n="79"><hi rend="paranum">७९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘अत्थि लोके सीलगुणो, सच्‍चं सोचेय्यनुद्दया।</p>
+
+<p rend="gathalast">तेन सच्‍चेन काहामि, सच्‍चकिरियमुत्तमं॥</p>
+
+<p rend="hangnum" n="80"><hi rend="paranum">८०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘आवेज्‍जेत्वा धम्मबलं, सरित्वा पुब्बके जिने।</p>
+
+<p rend="gathalast">सच्‍चबलमवस्साय, सच्‍चकिरियमकासहं॥</p>
+
+<p rend="hangnum" n="81"><hi rend="paranum">८१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘सन्ति <pb ed="T" n="2.0589"/> पक्खा अपतना, सन्ति पादा अवञ्‍चना।</p>
+
+<p rend="gathalast">मातापिता च निक्खन्ता, जातवेद पटिक्‍कम’॥</p>
+
+<p rend="hangnum" n="82"><hi rend="paranum">८२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सहसच्‍चे कते मय्हं, महापज्‍जलितो सिखी।</p>
+
+<p rend="gatha2">वज्‍जेसि सोळसकरीसानि, उदकं पत्वा यथा सिखी।</p>
+
+<p rend="gathalast">सच्‍चेन मे समो नत्थि, एसा मे सच्‍चपारमी’’ति॥</p>
+
+<p rend="centre">वट्टपोतकचरियं नवमं।</p>
+
+<p rend="subhead">१०. मच्छराजचरिया</p>
+
+<p rend="hangnum" n="83"><hi rend="paranum">८३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="V" n="2.0402"/><pb ed="P" n="0.0099"/> यदा होमि, मच्छराजा महासरे।</p>
+
+<p rend="gathalast">उण्हे सूरियसन्तापे, सरे उदक खीयथ॥</p>
+
+<p rend="hangnum" n="84"><hi rend="paranum">८४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ततो काका च गिज्झा च, कङ्का <note>बका (सी॰)</note> कुललसेनका।</p>
+
+<p rend="gathalast">भक्खयन्ति दिवारत्तिं, मच्छे उपनिसीदिय॥</p>
+
+<p rend="hangnum" n="85"><hi rend="paranum">८५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवं चिन्तेसहं तत्थ, सह ञातीहि पीळितो।</p>
+
+<p rend="gathalast">‘केन नु खो उपायेन, ञाती दुक्खा पमोचये’॥</p>
+
+<p rend="hangnum" n="86"><hi rend="paranum">८६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘विचिन्तयित्वा धम्मत्थं, सच्‍चं अद्दस पस्सयं।</p>
+
+<p rend="gathalast">सच्‍चे ठत्वा पमोचेसिं, ञातीनं तं अतिक्खयं॥</p>
+
+<p rend="hangnum" n="87"><hi rend="paranum">८७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अनुस्सरित्वा सतं धम्मं, परमत्थं विचिन्तयं।</p>
+
+<p rend="gathalast">अकासि सच्‍चकिरियं, यं लोके धुवसस्सतं॥</p>
+
+<p rend="hangnum" n="88"><hi rend="paranum">८८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘यतो <pb ed="M" n="2.0416"/> सरामि अत्तानं, यतो पत्तोस्मि विञ्‍ञुतं।</p>
+
+<p rend="gathalast">नाभिजानामि सञ्‍चिच्‍च, एकपाणम्पि हिंसितं॥</p>
+
+<p rend="hangnum" n="89"><hi rend="paranum">८९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘एतेन <pb ed="T" n="2.0590"/> सच्‍चवज्‍जेन, पज्‍जुन्‍नो अभिवस्सतु।</p>
+
+<p rend="gatha2">अभित्थनय पज्‍जुन्‍न, निधिं काकस्स नासय।</p>
+
+<p rend="gathalast">काकं सोकाय रन्धेहि, मच्छे सोका पमोचय’॥</p>
+
+<p rend="hangnum" n="90"><hi rend="paranum">९०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सहकते सच्‍चवरे, पज्‍जुन्‍नो अभिगज्‍जिय।</p>
+
+<p rend="gathalast">थलं निन्‍नञ्‍च पूरेन्तो, खणेन अभिवस्सथ॥</p>
+
+<p rend="hangnum" n="91"><hi rend="paranum">९१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवरूपं सच्‍चवरं, कत्वा वीरियमुत्तमं।</p>
+
+<p rend="gathalast">वस्सापेसिं महामेघं, सच्‍चतेजबलस्सितो।</p>
+
+<p rend="gathalast">सच्‍चेन मे समो नत्थि, एसा मे सच्‍चपारमी’’ति॥</p>
+
+<p rend="centre">मच्छराजचरियं दसमं।</p>
+
+<p rend="subhead">११. कण्हदीपायनचरिया</p>
+
+<p rend="hangnum" n="92"><hi rend="paranum">९२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं <pb ed="V" n="2.0403"/> यदा होमि, कण्हदीपायनो इसि।</p>
+
+<p rend="gathalast">परोपञ्‍ञासवस्सानि, अनभिरतोचरिं अहं॥</p>
+
+<p rend="hangnum" n="93"><hi rend="paranum">९३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न कोचि एतं जानाति, अनभिरतिमनं मम।</p>
+
+<p rend="gathalast">अहञ्हि कस्सचि नाचिक्खिं, अरति मे चरति मानसे॥</p>
+
+<p rend="hangnum" n="94"><hi rend="paranum">९४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सब्रह्मचारी <pb ed="P" n="0.0100"/> मण्डब्यो, सहायो मे महाइसि।</p>
+
+<p rend="gathalast">पुब्बकम्मसमायुत्तो, सूलमारोपनं लभि॥</p>
+
+<p rend="hangnum" n="95"><hi rend="paranum">९५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तमहं उपट्ठहित्वान, आरोग्यमनुपापयिं।</p>
+
+<p rend="gathalast">आपुच्छित्वान आगञ्छिं, यं मय्हं सकमस्समं॥</p>
+
+<p rend="hangnum" n="96"><hi rend="paranum">९६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सहायो <pb ed="T" n="2.0591"/> ब्राह्मणो मय्हं, भरियं आदाय पुत्तकं।</p>
+
+<p rend="gathalast">तयो जना समागन्त्वा, आगञ्छुं पाहुनागतं॥</p>
+
+<p rend="hangnum" n="97"><hi rend="paranum">९७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सम्मोदमानो तेहि सह, निसिन्‍नो सकमस्समे।</p>
+
+<p rend="gathalast">दारको वट्टमनुक्खिपं, आसीविसमकोपयि॥</p>
+
+<p rend="hangnum" n="98"><hi rend="paranum">९८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ततो सो वट्टगतं मग्गं, अन्वेसन्तो कुमारको।</p>
+
+<p rend="gathalast">आसीविसस्स हत्थेन, उत्तमङ्गं परामसि॥</p>
+
+<p rend="hangnum" n="99"><hi rend="paranum">९९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स <pb ed="M" n="2.0417"/> आमसने कुद्धो, सप्पो विसबलस्सितो।</p>
+
+<p rend="gathalast">कुपितो परमकोपेन, अडंसि दारकं खणे॥</p>
+
+<p rend="hangnum" n="100"><hi rend="paranum">१००</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सहदट्ठो आसीविसेन <note>अतिविसेन (पी॰ क॰)</note>, दारको पपति <note>पतति (क॰)</note> भूमियं।</p>
+
+<p rend="gathalast">तेनाहं दुक्खितो आसिं, मम वाहसि तं दुक्खं॥</p>
+
+<p rend="hangnum" n="101"><hi rend="paranum">१०१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘त्याहं अस्सासयित्वान, दुक्खिते सोकसल्‍लिते।</p>
+
+<p rend="gathalast">पठमं अकासिं किरियं, अग्गं सच्‍चं वरुत्तमं॥</p>
+
+<p rend="hangnum" n="102"><hi rend="paranum">१०२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘सत्ताहमेवाहं पसन्‍नचित्तो, पुञ्‍ञत्थिको अचरिं ब्रह्मचरियं।</p>
+
+<p rend="gathalast">अथापरं यं चरितं ममेदं, वस्सानि पञ्‍ञाससमाधिकानि॥</p>
+
+<p rend="hangnum" n="103"><hi rend="paranum">१०३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘‘अकामको वाहि अहं चरामि, एतेन सच्‍चेन सुवत्थि होतु।</p>
+
+<p rend="gathalast">हतं विसं जीवतु यञ्‍ञदत्तो’॥</p>
+
+<p rend="hangnum" n="104"><hi rend="paranum">१०४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सह <pb ed="T" n="2.0592"/><pb ed="V" n="2.0404"/> सच्‍चे कते मय्हं, विसवेगेन वेधितो।</p>
+
+<p rend="gatha2">अबुज्झित्वान वुट्ठासि, अरोगो चासि माणवो।</p>
+
+<p rend="gathalast">सच्‍चेन मे समो नत्थि, एसा मे सच्‍चपारमी’’ति॥</p>
+
+<p rend="centre">कण्हदीपायनचरियं एकादसमं।</p>
+
+<p rend="subhead">१२. सुतसोमचरिया</p>
+
+<p rend="hangnum" n="105"><hi rend="paranum">१०५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं यदा होमि, सुतसोमो महीपति।</p>
+
+<p rend="gathalast">गहितो पोरिसादेन, ब्राह्मणे सङ्गरं सरिं॥</p>
+
+<p rend="hangnum" n="106"><hi rend="paranum">१०६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘खत्तियानं एकसतं, आवुणित्वा करत्तले।</p>
+
+<p rend="gathalast">एतेसं पमिलापेत्वा, यञ्‍ञत्थे उपनयी ममं॥</p>
+
+<p rend="hangnum" n="107"><hi rend="paranum">१०७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अपुच्छि <pb ed="P" n="0.0101"/> मं पोरिसादो, ‘किं त्वं इच्छसि निस्सजं।</p>
+
+<p rend="gathalast">यथामति ते काहामि, यदि मे त्वं पुनेहिसि’॥</p>
+
+<p rend="hangnum" n="108"><hi rend="paranum">१०८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘तस्स <pb ed="M" n="2.0418"/> पटिस्सुणित्वान, पण्हे आगमनं मम।</p>
+
+<p rend="gathalast">उपगन्त्वा पुरं रम्मं, रज्‍जं निय्यादयिं तदा॥</p>
+
+<p rend="hangnum" n="109"><hi rend="paranum">१०९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अनुस्सरित्वा सतं धम्मं, पुब्बकं जिनसेवितं।</p>
+
+<p rend="gathalast">ब्राह्मणस्स धनं दत्वा, पोरिसादं उपागमिं॥</p>
+
+<p rend="hangnum" n="110"><hi rend="paranum">११०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘नत्थि मे संसयो तत्थ, घातयिस्सति वा न वा।</p>
+
+<p rend="gatha2">सच्‍चवाचानुरक्खन्तो, जीवितं चजितुमुपागमिं।</p>
+
+<p rend="gathalast">सच्‍चेन मे समो नत्थि, एसा मे सच्‍चपारमी’’ति॥</p>
+
+<p rend="centre">सुतसोमचरियं द्वादसमं।</p>
+
+<p rend="subhead">१३. सुवण्णसामचरिया</p>
+
+<p rend="hangnum" n="111"><hi rend="paranum">१११</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सामो <pb ed="T" n="2.0593"/><pb ed="V" n="2.0405"/> यदा वने आसिं, सक्‍केन अभिनिम्मितो।</p>
+
+<p rend="gathalast">पवने सीहब्यग्घे च, मेत्तायमुपनामयिं॥</p>
+
+<p rend="hangnum" n="112"><hi rend="paranum">११२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सीहब्यग्घेहि दीपीहि, अच्छेहि महिसेहि च।</p>
+
+<p rend="gathalast">पसदमिगवराहेहि, परिवारेत्वा वने वसिं॥</p>
+
+<p rend="hangnum" n="113"><hi rend="paranum">११३</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘न मं कोचि उत्तसति, नपि भायामि कस्सचि।</p>
+
+<p rend="gathalast">मेत्ताबलेनुपत्थद्धो, रमामि पवने तदा’’ति॥</p>
+
+<p rend="centre">सुवण्णसामचरियं तेरसमं।</p>
+
+<p rend="subhead">१४. एकराजचरिया</p>
+
+<p rend="hangnum" n="114"><hi rend="paranum">११४</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘पुनापरं यदा होमि, एकराजाति विस्सुतो।</p>
+
+<p rend="gathalast">परमं सीलं अधिट्ठाय, पसासामि महामहिं॥</p>
+
+<p rend="hangnum" n="115"><hi rend="paranum">११५</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘दस कुसलकम्मपथे, वत्तामि अनवसेसतो।</p>
+
+<p rend="gathalast">चतूहि सङ्गहवत्थूहि, सङ्गण्हामि <note>सङ्गहामि (क॰)</note> महाजनं॥</p>
+
+<p rend="hangnum" n="116"><hi rend="paranum">११६</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘एवं मे अप्पमत्तस्स, इध लोके परत्थ च।</p>
+
+<p rend="gathalast">दब्बसेनो <pb ed="P" n="0.0102"/> उपगन्त्वा, अच्छिन्दन्तो पुरं मम॥</p>
+
+<p rend="hangnum" n="117"><hi rend="paranum">११७</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘राजूपजीवे <pb ed="M" n="2.0419"/> निगमे, सबलट्ठे सरट्ठके।</p>
+
+<p rend="gathalast">सब्बं हत्थगतं कत्वा, कासुया निखणी ममं॥</p>
+
+<p rend="hangnum" n="118"><hi rend="paranum">११८</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अमच्‍चमण्डलं रज्‍जं, फीतं अन्तेपुरं मम।</p>
+
+<p rend="gathalast">अच्छिन्दित्वान गहितं, पियं पुत्तंव पस्सहं।</p>
+
+<p rend="gathalast">मेत्ताय मे समो नत्थि, एसा मे मेत्तापारमी’’ति॥</p>
+
+<p rend="centre">एकराजचरियं चुद्दसमं।</p>
+
+<p rend="subhead">१५. महालोमहंसचरिया</p>
+
+<p rend="hangnum" n="119"><hi rend="paranum">११९</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सुसाने <pb ed="T" n="2.0594"/><pb ed="V" n="2.0406"/> सेय्यं कप्पेमि, छवट्ठिकं उपनिधायहं।</p>
+
+<p rend="gathalast">गामण्डला <note>गोमण्डला (सी॰), गाममण्डला (स्या॰)</note> उपागन्त्वा, रूपं दस्सेन्तिनप्पकं॥</p>
+
+<p rend="hangnum" n="120"><hi rend="paranum">१२०</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘अपरे गन्धमालञ्‍च, भोजनं विविधं बहुं।</p>
+
+<p rend="gathalast">उपायनानूपनेन्ति, हट्ठा संविग्गमानसा॥</p>
+
+<p rend="hangnum" n="121"><hi rend="paranum">१२१</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘ये मे दुक्खं उपहरन्ति, ये च देन्ति सुखं मम।</p>
+
+<p rend="gathalast">सब्बेसं समको होमि, दया कोपो न विज्‍जति॥</p>
+
+<p rend="hangnum" n="122"><hi rend="paranum">१२२</hi><hi rend="dot">.</hi></p>
+
+<p rend="gatha1"> ‘‘सुखदुक्खे तुलाभूतो, यसेसु अयसेसु च।</p>
+
+<p rend="gathalast">सब्बत्थ समको होमि, एसा मे उपेक्खापारमी’’ति॥</p>
+
+<p rend="centre">महालोमहंसचरियं पन्‍नरसमं।</p>
+
+<trailer rend="centre">युधञ्‍जयवग्गो ततियो।</trailer>
+</div>
+
+<p rend="bodytext">तस्सुद्दानं –</p>
+
+<p rend="gatha1">युधञ्‍जयो सोमनस्सो, अयोघरभिसेन च।</p>
+
+<p rend="gathalast">सोणनन्दो मूगपक्खो, कपिराजा सच्‍चसव्हयो॥</p>
+
+<p rend="gatha1">वट्टको मच्छराजा च, कण्हदीपायनो इसि।</p>
+
+<p rend="gatha2">सुतसोमो पुन आसिं <note>आसि (स्या॰)</note>, सामो च एकराजहु।</p>
+
+<p rend="gathalast">उपेक्खापारमी आसि, इति वुत्थं <note>वुत्तं (सब्बत्थ) अट्ठकथा ओलोकेतब्बा</note> महेसिना॥</p>
+
+<p rend="gatha1">एवं <pb ed="M" n="2.0420"/> बहुब्बिधं दुक्खं, सम्पत्ती च बहुब्बिधा <note>सम्पत्ति च बहुविधा (सी॰), सम्पत्तिं च बहुविधं (क॰)</note>।</p>
+
+<p rend="gathalast">भवाभवे अनुभवित्वा, पत्तो सम्बोधिमुत्तमं॥</p>
+
+<p rend="gatha1">दत्वा दातब्बकं दानं, सीलं पूरेत्वा असेसतो।</p>
+
+<p rend="gathalast">नेक्खम्मे पारमिं गन्त्वा, पत्तो सम्बोधिमुत्तमं॥</p>
+
+<p rend="gatha1">पण्डिते <pb ed="T" n="2.0595"/> परिपुच्छित्वा, वीरियं कत्वान मुत्तमं।</p>
+
+<p rend="gathalast">खन्तिया पारमिं गन्त्वा, पत्तो सम्बोधिमुत्तमं॥</p>
+
+<p rend="gatha1">कत्वा दळ्हमधिट्ठानं, सच्‍चवाचानुरक्खिय।</p>
+
+<p rend="gathalast">मेत्ताय <pb ed="P" n="0.0103"/> पारमिं गन्त्वा, पत्तो सम्बोधिमुत्तमं॥</p>
+
+<p rend="gatha1">लाभालाभे <pb ed="V" n="2.0407"/> यसायसे, सम्माननावमानने।</p>
+
+<p rend="gathalast">सब्बत्थ समको हुत्वा, पत्तो सम्बोधिमुत्तमं॥</p>
+
+<p rend="gatha1">कोसज्‍जं भयतो दिस्वा, वीरियारम्भञ्‍च खेमतो।</p>
+
+<p rend="gathalast">आरद्धवीरिया होथ, एसा बुद्धानुसासनी॥</p>
+
+<p rend="gatha1">विवादं भयतो दिस्वा, अविवादञ्‍च खेमतो।</p>
+
+<p rend="gathalast">समग्गा सखिला होथ, एसा बुद्धानुसासनी॥</p>
+
+<p rend="gatha1">पमादं भयतो दिस्वा, अप्पमादञ्‍च खेमतो।</p>
+
+<p rend="gathalast">भावेथट्ठङ्गिकं मग्गं, एसा बुद्धानुसासनी॥</p>
+
+<p rend="bodytext">इत्थं सुदं भगवा अत्तनो पुब्बचरियं सम्भावयमानो बुद्धापदानियं नाम धम्मपरियायं अभासित्थाति।</p>
+
+<trailer rend="centre">चरियापिटकं निट्ठितं।</trailer>
+</div>
+
+</body>
+<back></back>
+</text>
+</TEI.2>
