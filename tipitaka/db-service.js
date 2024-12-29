@@ -203,9 +203,30 @@ export async function handleNewPara(lastNikayaEntryId, nodeId, paraText) {
       {
         lastNikayaEntryId: lastNikayaEntryId,
         paraId: nodeId,
-        paraText: paraText,
+        paraText: paraText.trim(),
       }
     );
+
+    //Split the lines of 'unicode -' OR 'unicode |'
+    const lines = paraText.split(/\u2013|\u0964/);
+    console.log(`*** LINES ***`);
+    lines.forEach(async (line) => {
+      console.log(line);
+      if (line.length !== 0) {
+        await driver.executeQuery(
+          `
+            MATCH (p :PARA {id: $paraId})
+            MERGE (l :LINE {text: $lineText})
+            MERGE (p)-[:HAS_LINE]->(l)
+            RETURN l
+        `,
+          {
+            paraId: nodeId,
+            lineText: line.trim(),
+          }
+        );
+      }
+    });
   } catch (e) {
     throw new DBServiceDriverError(e.message);
   } finally {
@@ -240,6 +261,27 @@ export async function handleNewSubPara(nodeId, subParaId, subParaText) {
         subParaText: subParaText,
       }
     );
+
+    //Split the lines of 'unicode -' OR 'unicode |'
+    const lines = subParaText.split(/\u2013|\u0964/);
+    console.log(`*** SUBPARA LINES ***`);
+    lines.forEach(async (line) => {
+      console.log(line);
+      if (line.length !== 0) {
+        await driver.executeQuery(
+          `
+            MATCH (sp :SUBPARA {id: $subParaId})
+            MERGE (l :LINE {text: $lineText})
+            MERGE (sp)-[:HAS_LINE]->(l)
+            RETURN l
+        `,
+          {
+            subParaId: subParaId,
+            lineText: line,
+          }
+        );
+      }
+    });
   } catch (e) {
     throw new DBServiceDriverError(e.message);
   } finally {

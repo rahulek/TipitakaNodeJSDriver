@@ -1,0 +1,37 @@
+//Total nodes
+MATCH (n) RETURN COUNT(n)
+
+//Find all Book nodes
+MATCH (b :BOOK) RETURN b
+
+//Get IDs of all the Book Entries
+MATCH (p :PARA)<-[:HAS_PARA]-(ne) RETURN DISTINCT ne.id
+
+//Get number of paras in a given entry
+MATCH (p :PARA)<-[:HAS_PARA]-(ne {id: "DN1_1"}) RETURN COUNT(p)
+
+//Get number of para IDs in a given entry
+MATCH (p :PARA)<-[:HAS_PARA]-(ne {id: "DN1_1"}) RETURN p.id
+
+//Get para Text for a given para id
+MATCH (p :PARA {id: "DN1_1_41"}) RETURN p.text
+
+//Get all the lines for a given para id
+MATCH (l :LINE)<-[:HAS_LINE]-(p :PARA {id: "DN1_1_8"}) RETURN p, l
+
+//Get the Book Entry trailer
+MATCH (ne :NIKAYAENTRY {id:"DN1_1"})-[:HAS_TRAILER]->(t) RETURN ne, t
+
+//Get the Book trailer
+MATCH (b :BOOK)-[:HAS_TRAILER]->(t) RETURN b, t
+
+//Get Gatha Text for the book entry (if any)
+(((( BUGGY ))))
+//Get Book Ending Gatha (if any)
+((( NOT YET IMPLEMENTED - ToDo)))
+
+//Find all paras where text repeated exact
+MATCH (l :LINE)<-[hl :HAS_LINE]-(p :PARA) WHERE l.text= 'एवं  मे सुतं' RETURN p.id
+
+//Find all paras where text repeated fuzzy
+MATCH (l :LINE)<-[hl :HAS_LINE]-(p :PARA) WHERE l.text STARTS WITH 'एकं समयं भगवा' RETURN p.id
