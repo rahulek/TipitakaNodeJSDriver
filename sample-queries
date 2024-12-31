@@ -1,5 +1,11 @@
+//Schema
+CALL db.schema.visualization
+
 //Total nodes
 MATCH (n) RETURN COUNT(n)
+
+//Get All Pitakas
+MATCH (tp :TIPITAKA)-[:HAS_PITAKA]->(p :PITAKA) RETURN tp, p
 
 //Find all Book nodes
 MATCH (b :BOOK) RETURN b

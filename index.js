@@ -1,22 +1,9 @@
 import { NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD } from './constants.js';
-import {
-  METADATA_TOPHEADER_NIKAYA,
-  METADATA_TOPHEADER_TEXT,
-  METADATA_BOOK,
-  METADATA_NIKAYA,
-  METADATA_SUB_SECTION_TITLE,
-  METADATA_SUB_SECTION_TYPE_SUTTA,
-  METADATA_SUB_SECTION_TYPE_VAGGA,
-  METADATA_SUB_SECTION_END_GATHA,
-  METADATA_PALI_TEXT_PARA,
-  METADATA_TRAILER,
-  METADATA_BOOK_END_GATHA,
-  METADATA_OUTER_TRAILER,
-} from './constants.js';
-import { closeDriver, initDriver } from './neo4j/neo4j.js';
-import { basicNikayaSetup, pruneDB } from './tipitaka/db-service.js';
-import { processTipitakaXML } from './parser/xml-parser-utils.js';
+import { MetaDataHandler } from './tipitaka/metadata-handler.js';
+import { Neo4JDBService } from './tipitaka/db-service.js';
+import { TipitakaParser } from './parser/xml-parser-utils.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
+import { TipitakaState } from './tipitaka/state.js';
 export const asyncLocalStorage = new AsyncLocalStorage();
 
 async function main() {
@@ -25,6 +12,22 @@ async function main() {
     console.error(`USAGE: npm run doit xmlfile=<Tipitaka XML File>`);
     process.exit(-1);
   }
+
+  const dbService = new Neo4JDBService(
+    NEO4J_URI,
+    NEO4J_USERNAME,
+    NEO4J_PASSWORD
+  );
+  const metaHandler = new MetaDataHandler();
+
+  // Close the connection when the app stops
+  process.on('exit', async (code) => {
+    dbService && dbService.cleanUp();
+  });
+  process.on('SIGINT', async () => {
+    dbService && dbService.cleanUp();
+    process.exit();
+  });
 
   let xmlFileToProcess = undefined;
   if (process.env.npm_config_prune) {
@@ -37,32 +40,21 @@ async function main() {
     process.exit();
   }
 
-  // Close the connection when the app stops
-  process.on('exit', async (code) => {
-    await closeDriver();
-  });
-  process.on('SIGINT', async () => {
-    await closeDriver();
-  });
-
   try {
-    await asyncLocalStorage.run({}, async () => {
-      initDriver(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, {
-        maxConnectionLifetime: 10 * 60 * 1000, // 10 minutes
-        maxConnectionPoolSize: 300,
-        // logging: {
-        //   level: 'debug',
-        //   logger: (level, message) =>
-        //     console.log('+++' + level + ' ' + message),
-        // },
-      });
+    asyncLocalStorage.run(new TipitakaState(), async () => {
       if (process.env.npm_config_prune) {
         console.log(`~~~*** CAUTION: Pruning the DB Now....*** ~~~~`);
-        pruneDB();
+        dbService ** dbService.pruneDB();
         return;
       }
-      await basicNikayaSetup();
-      await processTipitakaXML(xmlFileToProcess);
+
+      const parser = new TipitakaParser(
+        xmlFileToProcess,
+        dbService,
+        metaHandler.metaDataCallback
+      );
+
+      parser && (await parser.processXML());
     });
 
     console.log(`XML File processed`);
@@ -74,4 +66,5 @@ async function main() {
 
 (async () => {
   await main();
+  //process.exit();
 })();
