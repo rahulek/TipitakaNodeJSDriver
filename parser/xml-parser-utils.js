@@ -102,14 +102,23 @@ export class TipitakaParser {
     console.log(`Start Parsing and populating the Graph`);
 
     this.dbService && (await this.dbService.basicNikayaSetup());
-    xmlParser && xmlParser.parseString(data, this.parserCallback);
+    xmlParser &&
+      xmlParser.parseString(data, async (err, result) => {
+        await this.parserCallback(err, result);
+      });
 
     return 0;
   }
 
-  async processXML() {
+  processXML() {
     console.log(`Processing: ${this.filename}`);
-    return fs.readFile(this.filename, 'utf8', this.readCallback);
+    return fs.readFile(
+      this.filename,
+      'utf8',
+      async (err, data) => {
+        await this.readCallback(err, data);
+      } /*this.readCallback*/
+    );
   }
 
   async processDiv(div) {

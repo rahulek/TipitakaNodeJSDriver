@@ -1,4 +1,4 @@
-import { getDriver } from '../neo4j/neo4j.js';
+import { parseString } from 'xml2js';
 import DBServiceDriverError from '../errors/db-service-error.js';
 import { closeDriver, initDriver } from '../neo4j/neo4j.js';
 
@@ -9,47 +9,51 @@ export class Neo4JDBService {
     this.password = password;
 
     this.driver = initDriver(this.uri, this.username, this.password, {
-      maxConnectionLifetime: 10 * 60 * 1000, // 10 minutes
-      maxConnectionPoolSize: 300,
+      // maxConnectionLifetime: 10 * 60 * 1000, // 10 minutes
+      //maxConnectionPoolSize: 300,
     });
   }
 
   async cleanUp() {
-    await closeDriver();
+    await closeDriver(this.driver);
   }
 
-  async basicNikayaSetup() {
+  async executeWriteTx(query, params) {
     const driver = this.driver;
 
     if (!driver) {
       throw new DBServiceDriverError('Neo4J Driver is not available.');
     }
 
-    console.log(`BasicNikayaSetup Start...`);
-
     try {
-      await driver.executeQuery(
-        `
-        MERGE (tipitaka :TIPITAKA {name: $name, attribution: $attribution})
-        MERGE (vinaya :PITAKA {name: $vinaya})
-        MERGE (sutta :PITAKA {name: $sutta})
-        MERGE (abhidhamma :PITAKA {name: $abhidhamma})
-        MERGE (tipitaka)-[:HAS_PITAKA]->(vinaya)
-        MERGE (tipitaka)-[:HAS_PITAKA]->(sutta)
-        MERGE (tipitaka)-[:HAS_PITAKA]->(abhidhamma)
-        `,
-        {
-          name: 'Tipitaka',
-          attribution: 'http://www.tipitaka.org',
-          vinaya: 'Vinaya',
-          sutta: 'Sutta',
-          abhidhamma: 'Abhidhamma',
-        }
-      );
+      return await driver.executeQuery(query, params);
     } catch (e) {
       throw new DBServiceDriverError(e.message);
     } finally {
     }
+  }
+
+  async basicNikayaSetup() {
+    console.log(`BasicNikayaSetup Start...`);
+
+    const query = `
+    MERGE (tipitaka :TIPITAKA {name: $name, attribution: $attribution})
+          MERGE (vinaya :PITAKA {name: $vinaya})
+          MERGE (sutta :PITAKA {name: $sutta})
+          MERGE (abhidhamma :PITAKA {name: $abhidhamma})
+          MERGE (tipitaka)-[:HAS_PITAKA]->(vinaya)
+          MERGE (tipitaka)-[:HAS_PITAKA]->(sutta)
+          MERGE (tipitaka)-[:HAS_PITAKA]->(abhidhamma)
+          RETURN tipitaka, vinaya, sutta, abhidhamma
+    `;
+    const params = {
+      name: 'Tipitaka',
+      attribution: 'http://www.tipitaka.org',
+      vinaya: 'Vinaya',
+      sutta: 'Sutta',
+      abhidhamma: 'Abhidhamma',
+    };
+    const result = await this.executeWriteTx(query, params);
 
     console.log(`BasicNikayaSetup End...`);
   }
@@ -61,47 +65,35 @@ export class Neo4JDBService {
       );
     }
 
-    const driver = this.driver;
-
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
+    let bookNode = {};
+    const bookTitle = info.data.title ? info.data.title : undefined;
+    if (!bookTitle) {
+      throw new DBServiceDriverError('Book has no title');
     }
 
-    try {
-      let bookNode = {};
-      const bookTitle = info.data.title ? info.data.title : undefined;
-      if (!bookTitle) {
-        throw new DBServiceDriverError('Book has no title');
-      }
+    //Digha Nikaya
+    if (info.data.id.toUpperCase().startsWith('DN')) {
+      bookNode.pitakaName = 'Sutta';
+      bookNode.belongsTo = 'Digha Nikaya';
+      bookNode.name = bookTitle;
+      bookNode.id = info.data.id.toUpperCase();
+    }
+    //TODO: Add More for other Books
 
-      //Digha Nikaya
-      if (info.data.id.toUpperCase().startsWith('DN')) {
-        bookNode.pitakaName = 'Sutta';
-        bookNode.belongsTo = 'Digha Nikaya';
-        bookNode.name = bookTitle;
-        bookNode.id = info.data.id.toUpperCase();
-      }
-      //TODO: Add More for other Books
-
-      await driver.executeQuery(
-        `
+    const query = `
         MATCH (p :PITAKA {name: $pitakaName})
         MERGE (n :NIKAYA {name: $nikayaName})
         MERGE (p)-[:CONTAINS]->(n)
         MERGE (book :BOOK {name: $bookName, id: $bookId})
-        MERGE (n)-[:HAS_BOOK]->(book)
-    `,
-        {
-          pitakaName: bookNode.pitakaName,
-          nikayaName: bookNode.belongsTo,
-          bookName: bookNode.name,
-          bookId: bookNode.id,
-        }
-      );
-    } catch (e) {
-      throw new DBServiceDriverError(`New Book Entry: ${e.message}`);
-    } finally {
-    }
+        MERGE (n)-[:HAS_BOOK]->(book)`;
+
+    const params = {
+      pitakaName: bookNode.pitakaName,
+      nikayaName: bookNode.belongsTo,
+      bookName: bookNode.name,
+      bookId: bookNode.id,
+    };
+    const result = await this.executeWriteTx(query, params);
   }
 
   async handleNewNikayaEntry(info) {
@@ -111,349 +103,231 @@ export class Neo4JDBService {
       );
     }
 
-    const driver = this.driver;
+    let nikayaEntryNode = {};
 
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
+    nikayaEntryNode.bookId = info.data.id.toUpperCase().split('_')[0];
+    nikayaEntryNode.subtype = info.data.subtype;
+    nikayaEntryNode.id = info.data.id.toUpperCase();
 
-    try {
-      let nikayaEntryNode = {};
+    console.log(`Nikaya Entry Node: ${JSON.stringify(nikayaEntryNode)}`);
 
-      nikayaEntryNode.bookId = info.data.id.toUpperCase().split('_')[0];
-      nikayaEntryNode.subtype = info.data.subtype;
-      nikayaEntryNode.id = info.data.id.toUpperCase();
-
-      console.log(`Nikaya Entry Node: ${JSON.stringify(nikayaEntryNode)}`);
-
-      await driver.executeQuery(
-        `
+    const query = `
         MATCH (book :BOOK {id: $bookId})
         MERGE (book)-[:NIKAYA_ENTRY]->(ne :NIKAYAENTRY {id: $nikayaEntryId, type: $nikayaEntryType})
-    `,
-        {
-          bookId: nikayaEntryNode.bookId,
-          nikayaEntryId: nikayaEntryNode.id,
-          nikayaEntryType: nikayaEntryNode.subtype,
-        }
-      );
+    `;
+    const params = {
+      bookId: nikayaEntryNode.bookId,
+      nikayaEntryId: nikayaEntryNode.id,
+      nikayaEntryType: nikayaEntryNode.subtype,
+    };
 
-      console.log(`Nikaya Entry Node RETURN: ${nikayaEntryNode.id}`);
-      return nikayaEntryNode.id;
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+    const result = await this.executeWriteTx(query, params);
+
+    console.log(`Nikaya Entry Node RETURN: ${nikayaEntryNode.id}`);
+    return nikayaEntryNode.id;
   }
 
   async handleSetNikayaEntryTitle(forEntryId, title) {
-    const driver = this.driver;
+    console.log(
+      `Nikaya Entry Title Setting Node: For ${forEntryId} to ${title}`
+    );
 
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
-
-    try {
-      console.log(
-        `Nikaya Entry Title Setting Node: For ${forEntryId} to ${title}`
-      );
-
-      await driver.executeQuery(
-        `
+    const query = `
           MATCH (ne :NIKAYAENTRY {id: $nikayaEntryId})
           SET ne.name = $nikayaEntryName
-      `,
-        {
-          nikayaEntryId: forEntryId,
-          nikayaEntryName: title,
-        }
-      );
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+      `;
+
+    const params = {
+      nikayaEntryId: forEntryId,
+      nikayaEntryName: title,
+    };
+    const result = await this.executeWriteTx(query, params);
   }
 
   async handleNewSuttaVaggaSection(forEntryId, sectionId, title) {
-    const driver = this.driver;
+    console.log(
+      `Sutta Section : For ${forEntryId} to ${title} with ID :${sectionId}`
+    );
 
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
-
-    try {
-      console.log(
-        `Sutta Section : For ${forEntryId} to ${title} with ID :${sectionId}`
-      );
-
-      await driver.executeQuery(
-        `MATCH (ne :NIKAYAENTRY {id: $nikayaEntryId})
+    const query = `MATCH (ne :NIKAYAENTRY {id: $nikayaEntryId})
           MERGE (ne)-[:HAS_SUBSECTION]->(subSutta :SUBSECTION {name: $subSectionName, id: $subSectionId})
           RETURN ne, subSutta
-      `,
-        {
-          nikayaEntryId: forEntryId,
-          subSectionName: title,
-          subSectionId: sectionId,
-        }
-      );
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+      `;
+    const params = {
+      nikayaEntryId: forEntryId,
+      subSectionName: title,
+      subSectionId: sectionId,
+    };
+    const result = await this.executeWriteTx(query, params);
   }
 
   async handleNewPara(lastNikayaEntryId, nodeId, paraText) {
-    const driver = this.driver;
+    console.log(
+      `New para : For ${lastNikayaEntryId} with nodeId ${nodeId} to ${paraText.substring(
+        0,
+        10
+      )}`
+    );
 
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
-
-    try {
-      console.log(
-        `New para : For ${lastNikayaEntryId} with nodeId ${nodeId} to ${paraText.substring(
-          0,
-          10
-        )}`
-      );
-
-      await driver.executeQuery(
-        `
+    const query1 = `
           MATCH (ne :SUBSECTION {id: $lastNikayaEntryId})
           MERGE (ne)-[:HAS_PARA]->(para :PARA {id: $paraId, text: $paraText})
           RETURN ne, para
-      `,
-        {
-          lastNikayaEntryId: lastNikayaEntryId,
-          paraId: nodeId,
-          paraText: paraText.trim(),
-        }
-      );
+      `;
+    const params1 = {
+      lastNikayaEntryId: lastNikayaEntryId,
+      paraId: nodeId,
+      paraText: paraText.trim(),
+    };
+    const result1 = await this.executeWriteTx(query1, params1);
 
-      //Split the lines of 'unicode -' OR 'unicode |'
-      const lines = paraText.split(/\u2013|\u0964/);
-      console.log(`*** LINES ***`);
-      lines.forEach(async (line) => {
-        console.log(line);
-        if (line.length !== 0) {
-          await driver.executeQuery(
-            `
+    //Split the lines of 'unicode -' OR 'unicode |'
+    const lines = paraText.split(/\u2013|\u0964/);
+    console.log(`*** LINES ***`);
+    lines.forEach(async (line) => {
+      console.log(line);
+      if (line.length !== 0) {
+        const query2 = `
               MATCH (p :PARA {id: $paraId})
               MERGE (l :LINE {text: $lineText})
               MERGE (p)-[:HAS_LINE]->(l)
               RETURN l
-          `,
-            {
-              paraId: nodeId,
-              lineText: line.trim(),
-            }
-          );
-        }
-      });
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+          `;
+        const params2 = {
+          paraId: nodeId,
+          lineText: line.trim(),
+        };
+        await this.executeWriteTx(query2, params2);
+      }
+    });
   }
 
   async handleNewSubPara(nodeId, subParaId, subParaText) {
-    const driver = this.driver;
+    console.log(
+      `New Subpara : For ${nodeId} with id ${subParaId} to ${subParaText.substring(
+        0,
+        20
+      )}`
+    );
 
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
-
-    try {
-      console.log(
-        `New Subpara : For ${nodeId} with id ${subParaId} to ${subParaText.substring(
-          0,
-          20
-        )}`
-      );
-
-      await driver.executeQuery(
-        `
+    const query1 = `
           MATCH (para :PARA {id: $nodeId})
           MERGE (subPara :SUBPARA {id: $subParaId, text: $subParaText})
           MERGE (para)-[:HAS_SUBPARA]->(subPara)
           RETURN para, subPara
-      `,
-        {
-          nodeId: nodeId,
-          subParaId: subParaId,
-          subParaText: subParaText,
-        }
-      );
+      `;
+    const params1 = {
+      nodeId: nodeId,
+      subParaId: subParaId,
+      subParaText: subParaText,
+    };
 
-      //Split the lines of 'unicode -' OR 'unicode |'
-      const lines = subParaText.split(/\u2013|\u0964/);
-      console.log(`*** SUBPARA LINES ***`);
-      lines.forEach(async (line) => {
-        console.log(line);
-        if (line.length !== 0) {
-          await driver.executeQuery(
-            `
+    const result = await this.executeWriteTx(query1, params1);
+
+    //Split the lines of 'unicode -' OR 'unicode |'
+    const lines = subParaText.split(/\u2013|\u0964/);
+    console.log(`*** SUBPARA LINES ***`);
+    lines.forEach(async (line) => {
+      console.log(line);
+      if (line.length !== 0) {
+        const query2 = `
               MATCH (sp :SUBPARA {id: $subParaId})
               MERGE (l :LINE {text: $lineText})
               MERGE (sp)-[:HAS_LINE]->(l)
               RETURN l
-          `,
-            {
-              subParaId: subParaId,
-              lineText: line,
-            }
-          );
-        }
-      });
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+          `;
+        const param2 = {
+          subParaId: subParaId,
+          lineText: line,
+        };
+        await this.executeWriteTx(query2, param2);
+      }
+    });
   }
 
   async handleNewGatha(nodeId, subParaId, gathaText) {
-    const driver = this.driver;
+    console.log(
+      `New Section Ending Gatha : For ${nodeId} with id ${subParaId} to ${gathaText.substring(
+        0,
+        20
+      )}`
+    );
 
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
-
-    try {
-      console.log(
-        `New Section Ending Gatha : For ${nodeId} with id ${subParaId} to ${gathaText.substring(
-          0,
-          20
-        )}`
-      );
-
-      await driver.executeQuery(
-        `
+    const query = `
           MATCH (para :PARA {id: $nodeId})
           MERGE (subPara :SUBPARA {id: $subParaId, text: $gathaText, type: $subParaType})
           MERGE (para)-[:HAS_SUBPARA]->(subPara)
-          RETURN para, subPara
-      `,
-        {
-          nodeId: nodeId,
-          subParaId: subParaId,
-          gathaText: gathaText,
-          subParaType: 'GATHA',
-        }
-      );
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+          RETURN para, subPara`;
+    const params = {
+      nodeId: nodeId,
+      subParaId: subParaId,
+      gathaText: gathaText,
+      subParaType: 'GATHA',
+    };
+
+    const result = await this.executeWriteTx(query, params);
   }
 
   async handleBookEndingGatha(neId, subParaId, gathaText, gathaType) {
-    const driver = this.driver;
+    console.log(
+      `Book Ending Gatha : Type: ${gathaType} For book ${neId}, id ${subParaId} to ${gathaText.substring(
+        0,
+        20
+      )}`
+    );
 
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
-
-    try {
-      console.log(
-        `Book Ending Gatha : Type: ${gathaType} For book ${neId}, id ${subParaId} to ${gathaText.substring(
-          0,
-          20
-        )}`
-      );
-
-      // await driver.executeQuery(
-      //   `
-      //     MATCH (ne :NIKAYAENTRY {id: $neId})
-      //     MERGE (subPara :SUBPARA {id: $subParaId, text: $gathaText, type: $gathaType})
-      //     MERGE (ne)-[:HAS_SUBPARA]->(subPara)
-      //     RETURN ne, subPara
-      // `,
-      //   {
-      //     neId: neId,
-      //     subParaId: subParaId,
-      //     gathaText: gathaText,
-      //     gathaType: gathaType,
-      //   }
-      // );
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+    // await driver.executeQuery(
+    //   `
+    //     MATCH (ne :NIKAYAENTRY {id: $neId})
+    //     MERGE (subPara :SUBPARA {id: $subParaId, text: $gathaText, type: $gathaType})
+    //     MERGE (ne)-[:HAS_SUBPARA]->(subPara)
+    //     RETURN ne, subPara
+    // `,
+    //   {
+    //     neId: neId,
+    //     subParaId: subParaId,
+    //     gathaText: gathaText,
+    //     gathaType: gathaType,
+    //   }
+    // );
   }
 
   async handleNETrailer(neId, neTrailerText) {
-    const driver = this.driver;
+    console.log(`New Section Trailer : For ${neId} to ${neTrailerText}`);
 
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
-
-    try {
-      console.log(`New Section Trailer : For ${neId} to ${neTrailerText}`);
-
-      await driver.executeQuery(
-        `
+    const query = `
           MATCH (ne :NIKAYAENTRY {id: $neId})
           MERGE (t :TRAILER {text: $neTrailerText})
           MERGE (ne)-[:HAS_TRAILER]->(t)
           RETURN t
-      `,
-        {
-          neId: neId,
-          neTrailerText: neTrailerText,
-        }
-      );
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+      `;
+    const params = {
+      neId: neId,
+      neTrailerText: neTrailerText,
+    };
+    const result = this.executeWriteTx(query, params);
   }
 
   async handleBookTrailer(bookId, bookTrailerText) {
-    const driver = this.driver;
+    console.log(`Book Trailer : For ${bookId} to ${bookTrailerText}`);
 
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
-
-    try {
-      console.log(`Book Trailer : For ${bookId} to ${bookTrailerText}`);
-
-      await driver.executeQuery(
-        `
+    const query = `
           MATCH (b :BOOK {id: $bookId})
           MERGE (t :TRAILER {text: $bookTrailerText})
           MERGE (b)-[:HAS_TRAILER]->(t)
           RETURN t
-      `,
-        {
-          bookId: bookId,
-          bookTrailerText: bookTrailerText,
-        }
-      );
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+      `;
+    const params = {
+      bookId: bookId,
+      bookTrailerText: bookTrailerText,
+    };
+    const result = this.executeWriteTx(query, params);
   }
 
   async pruneDB() {
-    const driver = this.driver;
-
-    if (!driver) {
-      throw new DBServiceDriverError('Neo4J Driver is not available.');
-    }
-
-    try {
-      await driver.executeQuery(
-        `
+    const query = `
           MATCH (n) DETACH DELETE n
-      `
-      );
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+      `;
+    const result = this.executeWriteTx(query, {});
   }
 }

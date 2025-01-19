@@ -1,3 +1,4 @@
+import whyIsNodeRunning from 'why-is-node-running';
 import { NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD } from './constants.js';
 import { MetaDataHandler } from './tipitaka/metadata-handler.js';
 import { Neo4JDBService } from './tipitaka/db-service.js';
@@ -21,17 +22,17 @@ async function main() {
   const metaHandler = new MetaDataHandler();
 
   // Close the connection when the app stops
-  process.on('exit', async (code) => {
-    dbService && dbService.cleanUp();
-  });
-  process.on('SIGINT', async () => {
-    dbService && dbService.cleanUp();
-    process.exit();
-  });
+  // process.on('exit', async (code) => {
+  //   dbService && dbService.cleanUp();
+  // });
+  // process.on('SIGINT', async () => {
+  //   dbService && dbService.cleanUp();
+  //   process.exit();
+  // });
 
   let xmlFileToProcess = undefined;
   if (process.env.npm_config_prune) {
-    console.log(`Pruning the DB....`);
+    //console.log(`Pruning the DB....`);
   } else if (process.env.npm_config_xmlfile) {
     xmlFileToProcess = process.env.npm_config_xmlfile;
     console.log(`File passed in : ${xmlFileToProcess}`);
@@ -40,31 +41,35 @@ async function main() {
     process.exit();
   }
 
+  if (process.env.npm_config_prune) {
+    console.log(`~~~*** CAUTION: Pruning the DB Now....*** ~~~~`);
+    dbService && (await dbService.pruneDB());
+    dbService && (await dbService.cleanUp());
+    console.log(`Pruning Done`);
+    return;
+  }
+
   try {
     asyncLocalStorage.run(new TipitakaState(), async () => {
-      if (process.env.npm_config_prune) {
-        console.log(`~~~*** CAUTION: Pruning the DB Now....*** ~~~~`);
-        dbService ** dbService.pruneDB();
-        return;
-      }
-
+      console.log(`Started with XML Processing`);
       const parser = new TipitakaParser(
         xmlFileToProcess,
         dbService,
         metaHandler.metaDataCallback
       );
 
-      parser && (await parser.processXML());
+      parser && parser.processXML();
+      console.log(`XML File processed`);
     });
-
-    console.log(`XML File processed`);
   } catch (e) {
     console.error(e);
     process.exit(-1);
   }
 }
 
-(async () => {
+const iff = async () => {
   await main();
-  //process.exit();
-})();
+  whyIsNodeRunning();
+};
+
+await iff();
