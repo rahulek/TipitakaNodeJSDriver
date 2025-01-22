@@ -44,6 +44,11 @@ export class MetaDataHandler {
         case METADATA_NIKAYA:
           console.log(`Nikaya Type: ${info.data.subtype} - ${info.data.id}`);
 
+          //Ignore "book" types
+          if (info.data.subtype === 'book') {
+            return;
+          }
+
           if (this.dbService) {
             const neID = await this.dbService.handleNewNikayaEntry(info);
             if (state) {

@@ -9,9 +9,13 @@ export class Neo4JDBService {
     this.password = password;
 
     this.driver = initDriver(this.uri, this.username, this.password, {
-      // maxConnectionLifetime: 10 * 60 * 1000, // 10 minutes
-      //maxConnectionPoolSize: 300,
+      maxConnectionLifetime: 10 * 60 * 1000, // 10 minutes
+      maxConnectionPoolSize: 300,
+      //encrypted: process.env.NEO4J_ENCRYPTION || 'ENCRYPTION_ON',
+      //trust: 'TRUST_ALL_CERTIFICATES',
     });
+    console.log(`Connected to : ${this.uri}`);
+    console.log(`driver: ${JSON.stringify(this.driver)}`);
   }
 
   async cleanUp() {
