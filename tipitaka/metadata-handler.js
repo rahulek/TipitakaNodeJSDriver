@@ -44,8 +44,12 @@ export class MetaDataHandler {
         case METADATA_NIKAYA:
           console.log(`Nikaya Type: ${info.data.subtype} - ${info.data.id}`);
 
-          //Ignore "book" types
           if (info.data.subtype === 'book') {
+            if (state) {
+              console.log(`NIKAYA BOOK: ${state.getBookId().toUpperCase()}`);
+              state.setNikayaEntryId(state.getBookId().toUpperCase());
+              state.setSuttaVaggaNumber(1);
+            }
             return;
           }
 

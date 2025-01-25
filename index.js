@@ -46,25 +46,26 @@ async function main() {
     dbService && (await dbService.pruneDB());
     dbService && (await dbService.cleanUp());
     console.log(`Pruning Done`);
-    return;
+  } else {
+    try {
+      asyncLocalStorage.run(new TipitakaState(), async () => {
+        console.log(`Started with XML Processing`);
+        const parser = new TipitakaParser(
+          xmlFileToProcess,
+          dbService,
+          metaHandler.metaDataCallback
+        );
+
+        parser && (await parser.processXML());
+        console.log(`XML File processed`);
+      });
+    } catch (e) {
+      console.error(e);
+      process.exit(-1);
+    }
   }
 
-  try {
-    asyncLocalStorage.run(new TipitakaState(), async () => {
-      console.log(`Started with XML Processing`);
-      const parser = new TipitakaParser(
-        xmlFileToProcess,
-        dbService,
-        metaHandler.metaDataCallback
-      );
-
-      parser && parser.processXML();
-      console.log(`XML File processed`);
-    });
-  } catch (e) {
-    console.error(e);
-    process.exit(-1);
-  }
+  dbService && dbService.cleanUp();
 }
 
 const iff = async () => {

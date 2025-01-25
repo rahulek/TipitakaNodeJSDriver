@@ -9,8 +9,8 @@ export class Neo4JDBService {
     this.password = password;
 
     this.driver = initDriver(this.uri, this.username, this.password, {
-      maxConnectionLifetime: 10 * 60 * 1000, // 10 minutes
-      maxConnectionPoolSize: 300,
+      // maxConnectionLifetime: 10 * 60 * 1000, // 10 minutes
+      // maxConnectionPoolSize: 300,
       //encrypted: process.env.NEO4J_ENCRYPTION || 'ENCRYPTION_ON',
       //trust: 'TRUST_ALL_CERTIFICATES',
     });
@@ -22,6 +22,21 @@ export class Neo4JDBService {
     await closeDriver(this.driver);
   }
 
+  // async executeWriteTx(query, params) {
+  //   const driver = this.driver;
+
+  //   if (!driver) {
+  //     throw new DBServiceDriverError('Neo4J Driver is not available.');
+  //   }
+
+  //   try {
+  //     return await driver.executeQuery(query, params);
+  //   } catch (e) {
+  //     throw new DBServiceDriverError(e.message);
+  //   } finally {
+  //   }
+  // }
+
   async executeWriteTx(query, params) {
     const driver = this.driver;
 
@@ -30,7 +45,21 @@ export class Neo4JDBService {
     }
 
     try {
-      return await driver.executeQuery(query, params);
+      const session = driver.session();
+      let tx = await session.beginTransaction();
+      try {
+        const res = await tx.run(query, params);
+        await tx.commit();
+        console.log(`RESULT1: ${JSON.stringify(res.summary.query.text)}`);
+        console.log(`RESULT2: ${JSON.stringify(res.summary.query.parameters)}`);
+        console.log(`RESULT3: ${JSON.stringify(res.summary.counters._stats)}`);
+        return res;
+      } catch (e) {
+        console.log(`Rolling back the TX`);
+        await tx.rollback();
+      } finally {
+        await session.close();
+      }
     } catch (e) {
       throw new DBServiceDriverError(e.message);
     } finally {
@@ -60,6 +89,7 @@ export class Neo4JDBService {
     const result = await this.executeWriteTx(query, params);
 
     console.log(`BasicNikayaSetup End...`);
+    return result;
   }
 
   async handleNewBook(info) {
@@ -325,13 +355,13 @@ export class Neo4JDBService {
       bookId: bookId,
       bookTrailerText: bookTrailerText,
     };
-    const result = this.executeWriteTx(query, params);
+    const result = await this.executeWriteTx(query, params);
   }
 
   async pruneDB() {
     const query = `
           MATCH (n) DETACH DELETE n
       `;
-    const result = this.executeWriteTx(query, {});
+    const result = await this.executeWriteTx(query, null);
   }
 }

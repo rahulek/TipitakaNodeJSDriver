@@ -103,20 +103,20 @@ export class TipitakaParser {
 
     this.dbService && (await this.dbService.basicNikayaSetup());
     xmlParser &&
-      xmlParser.parseString(data, async (err, result) => {
-        await this.parserCallback(err, result);
+      xmlParser.parseString(data, (err, result) => {
+        this.parserCallback(err, result);
       });
 
     return 0;
   }
 
-  processXML() {
+  async processXML() {
     console.log(`Processing: ${this.filename}`);
     return fs.readFile(
       this.filename,
       'utf8',
-      async (err, data) => {
-        await this.readCallback(err, data);
+      (err, data) => {
+        this.readCallback(err, data);
       } /*this.readCallback*/
     );
   }
@@ -144,29 +144,11 @@ export class TipitakaParser {
             title: divHead[0]['_'],
           },
         };
-        this.metaDataCallback && this.metaDataCallback(info);
+        this.metaDataCallback && (await this.metaDataCallback(info));
       }
     }
 
-    divHead &&
-      divHead.forEach(async (divHeader) => {
-        if (divHeader['$']['rend']) {
-          if (divHeader['$']['rend'] == 'chapter') {
-            // console.log(`<METADATA> SUB-BOOK TITLE: ${divHeader['_']}`);
-          }
-        }
-        // console.log(`${divHeader['_']}`);
-
-        const info = {
-          type: METADATA_SUB_SECTION_TITLE,
-          data: {
-            title: divHeader['_'],
-          },
-        };
-        this.metaDataCallback && (await this.metaDataCallback(info));
-      });
-
-    if (div['$']['id'] && div['$']['type']) {
+    if (div['$']['id'] && div['$']['type'] && div['$']['type'] !== 'book') {
       // console.log(
       //   `<METADATA> Text Type: ${div['$']['type']}, id: ${div['$']['id']}`
       // );
@@ -179,6 +161,23 @@ export class TipitakaParser {
       };
       this.metaDataCallback && (await this.metaDataCallback(info));
     }
+
+    divHead &&
+      divHead.forEach(async (divHeader) => {
+        if (divHeader['$']['rend']) {
+          if (divHeader['$']['rend'] === 'chapter') {
+            // console.log(`<METADATA> SUB-BOOK TITLE: ${divHeader['_']}`);
+          }
+        }
+
+        const info = {
+          type: METADATA_SUB_SECTION_TITLE,
+          data: {
+            title: divHeader['_'],
+          },
+        };
+        this.metaDataCallback && (await this.metaDataCallback(info));
+      });
 
     divDiv &&
       divDiv.forEach((divDivEntry) => {
