@@ -1,25 +1,20 @@
-import { parseString } from 'xml2js';
 import DBServiceDriverError from '../errors/db-service-error.js';
 import { closeDriver, initDriver } from '../neo4j/neo4j.js';
 
 export class Neo4JDBService {
-  constructor(uri, username, password) {
-    this.uri = uri;
-    this.username = username;
-    this.password = password;
+  constructor(driver, logger) {
+    this.driver = driver;
+    this.logger = logger;
 
-    this.driver = initDriver(this.uri, this.username, this.password, {
-      // maxConnectionLifetime: 10 * 60 * 1000, // 10 minutes
-      // maxConnectionPoolSize: 300,
-      //encrypted: process.env.NEO4J_ENCRYPTION || 'ENCRYPTION_ON',
-      //trust: 'TRUST_ALL_CERTIFICATES',
-    });
-    console.log(`Connected to : ${this.uri}`);
-    console.log(`driver: ${JSON.stringify(this.driver)}`);
+    // console.log(`Driver : ${JSON.stringify(this.driver)}`);
+    // this.logger.info(`Connected to : ${this.uri}`);
+    // this.logger.info(`driver: ${JSON.stringify(this.driver)}`);
   }
 
-  async cleanUp() {
-    await closeDriver(this.driver);
+  cleanUp() {
+    (async (d) => {
+      await closeDriver(d);
+    })(this.driver);
   }
 
   // async executeWriteTx(query, params) {
@@ -37,37 +32,55 @@ export class Neo4JDBService {
   //   }
   // }
 
-  async executeWriteTx(query, params) {
+  executeWriteTx(query, params) {
     const driver = this.driver;
 
     if (!driver) {
       throw new DBServiceDriverError('Neo4J Driver is not available.');
     }
 
-    try {
-      const session = driver.session();
-      let tx = await session.beginTransaction();
+    const dbWriteFn = async (driver, query, params) => {
+      let session;
+
       try {
-        const res = await tx.run(query, params);
-        await tx.commit();
-        console.log(`RESULT1: ${JSON.stringify(res.summary.query.text)}`);
-        console.log(`RESULT2: ${JSON.stringify(res.summary.query.parameters)}`);
-        console.log(`RESULT3: ${JSON.stringify(res.summary.counters._stats)}`);
-        return res;
+        session = driver.session();
+        let tx = await session.beginTransaction();
+        try {
+          const res = await tx.run(query, params);
+          await tx.commit();
+          this.logger.debug(
+            `RESULT1: ${JSON.stringify(res.summary.query.text)}`
+          );
+          this.logger.debug(
+            `RESULT2: ${JSON.stringify(res.summary.query.parameters)}`
+          );
+          this.logger.debug(
+            `RESULT3: ${JSON.stringify(res.summary.counters._stats)}`
+          );
+          return res;
+        } catch (e) {
+          this.logger.debug(`Rolling back the TX`);
+          console.log(e);
+          this.logger.debug(`${JSON.stringify(e)}`);
+          await tx.rollback();
+        } finally {
+          await session.close();
+        }
       } catch (e) {
-        console.log(`Rolling back the TX`);
-        await tx.rollback();
+        throw new DBServiceDriverError(e.message);
       } finally {
         await session.close();
       }
-    } catch (e) {
-      throw new DBServiceDriverError(e.message);
-    } finally {
-    }
+    };
+
+    return (async (fn, d, q, p) => {
+      const res = await fn(d, q, p);
+      return res;
+    })(dbWriteFn, this.driver, query, params);
   }
 
-  async basicNikayaSetup() {
-    console.log(`BasicNikayaSetup Start...`);
+  basicNikayaSetup() {
+    this.logger.debug(`BasicNikayaSetup Start...`);
 
     const query = `
     MERGE (tipitaka :TIPITAKA {name: $name, attribution: $attribution})
@@ -86,13 +99,10 @@ export class Neo4JDBService {
       sutta: 'Sutta',
       abhidhamma: 'Abhidhamma',
     };
-    const result = await this.executeWriteTx(query, params);
-
-    console.log(`BasicNikayaSetup End...`);
-    return result;
+    return this.executeWriteTx(query, params);
   }
 
-  async handleNewBook(info) {
+  handleNewBook(info) {
     if (!(info && info.data)) {
       throw new DBServiceDriverError(
         'Parameter error: book info object is not valid '
@@ -127,10 +137,10 @@ export class Neo4JDBService {
       bookName: bookNode.name,
       bookId: bookNode.id,
     };
-    const result = await this.executeWriteTx(query, params);
+    return this.executeWriteTx(query, params);
   }
 
-  async handleNewNikayaEntry(info) {
+  handleNewNikayaEntry(info) {
     if (!(info && info.data)) {
       throw new DBServiceDriverError(
         'Parameter error: book info object is not valid '
@@ -143,7 +153,7 @@ export class Neo4JDBService {
     nikayaEntryNode.subtype = info.data.subtype;
     nikayaEntryNode.id = info.data.id.toUpperCase();
 
-    console.log(`Nikaya Entry Node: ${JSON.stringify(nikayaEntryNode)}`);
+    this.logger.debug(`Nikaya Entry Node: ${JSON.stringify(nikayaEntryNode)}`);
 
     const query = `
         MATCH (book :BOOK {id: $bookId})
@@ -155,14 +165,14 @@ export class Neo4JDBService {
       nikayaEntryType: nikayaEntryNode.subtype,
     };
 
-    const result = await this.executeWriteTx(query, params);
+    this.executeWriteTx(query, params);
 
-    console.log(`Nikaya Entry Node RETURN: ${nikayaEntryNode.id}`);
+    this.logger.debug(`Nikaya Entry Node RETURN: ${nikayaEntryNode.id}`);
     return nikayaEntryNode.id;
   }
 
-  async handleSetNikayaEntryTitle(forEntryId, title) {
-    console.log(
+  handleSetNikayaEntryTitle(forEntryId, title) {
+    this.logger.debug(
       `Nikaya Entry Title Setting Node: For ${forEntryId} to ${title}`
     );
 
@@ -175,11 +185,11 @@ export class Neo4JDBService {
       nikayaEntryId: forEntryId,
       nikayaEntryName: title,
     };
-    const result = await this.executeWriteTx(query, params);
+    return this.executeWriteTx(query, params);
   }
 
-  async handleNewSuttaVaggaSection(forEntryId, sectionId, title) {
-    console.log(
+  handleNewSuttaVaggaSection(forEntryId, sectionId, title) {
+    this.logger.debug(
       `Sutta Section : For ${forEntryId} to ${title} with ID :${sectionId}`
     );
 
@@ -192,11 +202,11 @@ export class Neo4JDBService {
       subSectionName: title,
       subSectionId: sectionId,
     };
-    const result = await this.executeWriteTx(query, params);
+    return this.executeWriteTx(query, params);
   }
 
-  async handleNewPara(lastNikayaEntryId, nodeId, paraText) {
-    console.log(
+  handleNewPara(lastNikayaEntryId, nodeId, paraText) {
+    this.logger.debug(
       `New para : For ${lastNikayaEntryId} with nodeId ${nodeId} to ${paraText.substring(
         0,
         10
@@ -213,13 +223,13 @@ export class Neo4JDBService {
       paraId: nodeId,
       paraText: paraText.trim(),
     };
-    const result1 = await this.executeWriteTx(query1, params1);
+    this.executeWriteTx(query1, params1);
 
     //Split the lines of 'unicode -' OR 'unicode |'
     const lines = paraText.split(/\u2013|\u0964/);
-    console.log(`*** LINES ***`);
-    lines.forEach(async (line) => {
-      console.log(line);
+    this.logger.debug(`*** LINES ***`);
+    lines.forEach((line) => {
+      this.logger.debug(line);
       if (line.length !== 0) {
         const query2 = `
               MATCH (p :PARA {id: $paraId})
@@ -231,13 +241,13 @@ export class Neo4JDBService {
           paraId: nodeId,
           lineText: line.trim(),
         };
-        await this.executeWriteTx(query2, params2);
+        this.executeWriteTx(query2, params2);
       }
     });
   }
 
-  async handleNewSubPara(nodeId, subParaId, subParaText) {
-    console.log(
+  handleNewSubPara(nodeId, subParaId, subParaText) {
+    this.logger.debug(
       `New Subpara : For ${nodeId} with id ${subParaId} to ${subParaText.substring(
         0,
         20
@@ -256,13 +266,13 @@ export class Neo4JDBService {
       subParaText: subParaText,
     };
 
-    const result = await this.executeWriteTx(query1, params1);
+    this.executeWriteTx(query1, params1);
 
     //Split the lines of 'unicode -' OR 'unicode |'
     const lines = subParaText.split(/\u2013|\u0964/);
-    console.log(`*** SUBPARA LINES ***`);
-    lines.forEach(async (line) => {
-      console.log(line);
+    this.logger.debug(`*** SUBPARA LINES ***`);
+    lines.forEach((line) => {
+      this.logger.debug(line);
       if (line.length !== 0) {
         const query2 = `
               MATCH (sp :SUBPARA {id: $subParaId})
@@ -274,13 +284,13 @@ export class Neo4JDBService {
           subParaId: subParaId,
           lineText: line,
         };
-        await this.executeWriteTx(query2, param2);
+        this.executeWriteTx(query2, param2);
       }
     });
   }
 
-  async handleNewGatha(nodeId, subParaId, gathaText) {
-    console.log(
+  handleNewGatha(nodeId, subParaId, gathaText) {
+    this.logger.debug(
       `New Section Ending Gatha : For ${nodeId} with id ${subParaId} to ${gathaText.substring(
         0,
         20
@@ -299,11 +309,11 @@ export class Neo4JDBService {
       subParaType: 'GATHA',
     };
 
-    const result = await this.executeWriteTx(query, params);
+    return this.executeWriteTx(query, params);
   }
 
-  async handleBookEndingGatha(neId, subParaId, gathaText, gathaType) {
-    console.log(
+  handleBookEndingGatha(neId, subParaId, gathaText, gathaType) {
+    this.logger.debug(
       `Book Ending Gatha : Type: ${gathaType} For book ${neId}, id ${subParaId} to ${gathaText.substring(
         0,
         20
@@ -326,8 +336,8 @@ export class Neo4JDBService {
     // );
   }
 
-  async handleNETrailer(neId, neTrailerText) {
-    console.log(`New Section Trailer : For ${neId} to ${neTrailerText}`);
+  handleNETrailer(neId, neTrailerText) {
+    this.logger.debug(`New Section Trailer : For ${neId} to ${neTrailerText}`);
 
     const query = `
           MATCH (ne :NIKAYAENTRY {id: $neId})
@@ -339,11 +349,11 @@ export class Neo4JDBService {
       neId: neId,
       neTrailerText: neTrailerText,
     };
-    const result = this.executeWriteTx(query, params);
+    return this.executeWriteTx(query, params);
   }
 
-  async handleBookTrailer(bookId, bookTrailerText) {
-    console.log(`Book Trailer : For ${bookId} to ${bookTrailerText}`);
+  handleBookTrailer(bookId, bookTrailerText) {
+    this.logger.debug(`Book Trailer : For ${bookId} to ${bookTrailerText}`);
 
     const query = `
           MATCH (b :BOOK {id: $bookId})
@@ -355,13 +365,13 @@ export class Neo4JDBService {
       bookId: bookId,
       bookTrailerText: bookTrailerText,
     };
-    const result = await this.executeWriteTx(query, params);
+    return this.executeWriteTx(query, params);
   }
 
-  async pruneDB() {
+  pruneDB() {
     const query = `
           MATCH (n) DETACH DELETE n
       `;
-    const result = await this.executeWriteTx(query, null);
+    return this.executeWriteTx(query, null);
   }
 }

@@ -34,15 +34,16 @@ import {
 // </TEI.2>
 
 export class TipitakaParser {
-  constructor(filename, dbService, metaDataCallback) {
+  constructor(filename, dbService, metaDataCallback, logger) {
     this.filename = filename;
     this.dbService = dbService;
     this.metaDataCallback = metaDataCallback;
     this.readCallback = this.readFileCallback.bind(this);
     this.parserCallback = this.parserDataCallback.bind(this);
+    this.logger = logger;
   }
 
-  async parserDataCallback(error, result) {
+  parserDataCallback(error, result) {
     if (error) {
       throw new Error(`XML Parse Error: ${error}`);
       exit(-1);
@@ -50,14 +51,14 @@ export class TipitakaParser {
     let tei = result[`TEI.2`];
     let textSections = tei.text;
     textSections &&
-      textSections.forEach(async (ts) => {
+      textSections.forEach((ts) => {
         let body = ts && ts.body;
         body.forEach((tsb) => {
           //Process all top-level Ps
           // console.log(`---------- TOP HEADERS -----------`);
           tsb &&
             tsb.p &&
-            tsb.p.forEach(async (p) => {
+            tsb.p.forEach((p) => {
               let info = {};
               if (p['$']['rend']) {
                 if (p['$']['rend'] == 'nikaya') {
@@ -77,51 +78,52 @@ export class TipitakaParser {
                   text: p['_'],
                 },
               };
-              this.metaDataCallback && (await this.metaDataCallback(info));
+              this.metaDataCallback && this.metaDataCallback(info);
             });
 
           //Process all Divs
           // console.log(`---------- TEXT ------------`);
           tsb &&
             tsb.div &&
-            tsb.div.forEach(async (d) => {
-              await this.processDiv(d);
+            tsb.div.forEach((d) => {
+              this.processDiv(d);
             });
         });
       });
+    return 'PARSER_DONE';
   }
 
-  async readFileCallback(err, data) {
+  readFileCallback(err, data) {
     const xmlParser = new xml2js.Parser();
 
     if (err) {
-      console.log(`File read error: ${err}`);
+      this.logger.error(`File read error: ${err}`);
       throw new XMLFileReadError(`File: ${this.filename} could not be read..`);
     }
 
-    console.log(`Start Parsing and populating the Graph`);
+    this.logger.info(`Start Parsing and populating the Graph`);
 
-    this.dbService && (await this.dbService.basicNikayaSetup());
-    xmlParser &&
-      xmlParser.parseString(data, (err, result) => {
-        this.parserCallback(err, result);
-      });
+    this.dbService && this.dbService.basicNikayaSetup();
+    if (xmlParser) {
+      xmlParser.parseString(data, this.parserCallback);
+    }
 
-    return 0;
+    return 'PARSER_DONE';
   }
 
-  async processXML() {
-    console.log(`Processing: ${this.filename}`);
-    return fs.readFile(
-      this.filename,
-      'utf8',
-      (err, data) => {
-        this.readCallback(err, data);
-      } /*this.readCallback*/
-    );
+  processXML(logger) {
+    this.logger.info(`Processing: ${this.filename}`);
+    const data = fs.readFileSync(this.filename, {
+      encoding: 'utf8',
+      flag: 'r',
+    });
+
+    if (data) {
+      return this.readCallback(null, data);
+    }
   }
 
-  async processDiv(div) {
+  processDiv(div) {
     if (!div) {
       return;
     }
@@ -144,7 +146,7 @@ export class TipitakaParser {
             title: divHead[0]['_'],
           },
         };
-        this.metaDataCallback && (await this.metaDataCallback(info));
+        this.metaDataCallback && this.metaDataCallback(info);
       }
     }
 
@@ -159,11 +161,11 @@ export class TipitakaParser {
           id: div['$']['id'],
         },
       };
-      this.metaDataCallback && (await this.metaDataCallback(info));
+      this.metaDataCallback && this.metaDataCallback(info);
     }
 
     divHead &&
-      divHead.forEach(async (divHeader) => {
+      divHead.forEach((divHeader) => {
         if (divHeader['$']['rend']) {
           if (divHeader['$']['rend'] === 'chapter') {
             // console.log(`<METADATA> SUB-BOOK TITLE: ${divHeader['_']}`);
@@ -176,7 +178,7 @@ export class TipitakaParser {
             title: divHeader['_'],
           },
         };
-        this.metaDataCallback && (await this.metaDataCallback(info));
+        this.metaDataCallback && this.metaDataCallback(info);
       });
 
     divDiv &&
@@ -185,7 +187,7 @@ export class TipitakaParser {
       });
 
     divP &&
-      divP.forEach(async (divPEntry) => {
+      divP.forEach((divPEntry) => {
         if (divPEntry['$']['rend']) {
           if (divPEntry['$']['rend'].startsWith('gatha')) {
             // console.log(`<METADATA> GATHA: ${divPEntry['$']['rend']}`);
@@ -196,7 +198,7 @@ export class TipitakaParser {
                 text: divPEntry['_'],
               },
             };
-            this.metaDataCallback && (await this.metaDataCallback(info));
+            this.metaDataCallback && this.metaDataCallback(info);
           }
 
           if (divPEntry['$']['rend'] === 'title') {
@@ -207,7 +209,7 @@ export class TipitakaParser {
                 title: divPEntry['_'],
               },
             };
-            this.metaDataCallback && (await this.metaDataCallback(info));
+            this.metaDataCallback && this.metaDataCallback(info);
           } else if (divPEntry['$']['rend'] === 'subhead') {
             // console.log(`<METADATA> SUB-BOOK SUTTA: ${divPEntry['_']}`);
             const info = {
@@ -216,7 +218,7 @@ export class TipitakaParser {
                 title: divPEntry['_'],
               },
             };
-            this.metaDataCallback && (await this.metaDataCallback(info));
+            this.metaDataCallback && this.metaDataCallback(info);
           }
         }
 
@@ -246,13 +248,13 @@ export class TipitakaParser {
               },
             };
           }
-          this.metaDataCallback && (await this.metaDataCallback(info));
+          this.metaDataCallback && this.metaDataCallback(info);
         }
         // console.log('~ * ~ * ~ * ~ * ~ *');
       });
 
     divTrailer &&
-      divTrailer.forEach(async (divTrailerEntry) => {
+      divTrailer.forEach((divTrailerEntry) => {
         // console.log(`<METADATA> Trailer Text: ${divTrailerEntry['_']}`);
         const info = {
           type: METADATA_TRAILER,
@@ -260,7 +262,7 @@ export class TipitakaParser {
             text: divTrailerEntry['_'],
           },
         };
-        this.metaDataCallback && (await this.metaDataCallback(info));
+        this.metaDataCallback && this.metaDataCallback(info);
       });
 
     return;

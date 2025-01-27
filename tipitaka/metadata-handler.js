@@ -14,11 +14,12 @@ import {
 import { asyncLocalStorage } from '../index.js';
 
 export class MetaDataHandler {
-  constructor(dbService) {
+  constructor(dbService, logger) {
     this.dbService = dbService;
+    this.logger = logger;
   }
 
-  async metaDataCallback(info) {
+  metaDataCallback(info) {
     if (!info) {
       return;
     }
@@ -28,25 +29,29 @@ export class MetaDataHandler {
 
       switch (info.type) {
         case METADATA_TOPHEADER_NIKAYA:
-          console.log(`Top Header Nikaya: ${info.data.text}`);
+          this.logger.debug(`Top Header Nikaya: ${info.data.text}`);
           break;
         case METADATA_TOPHEADER_TEXT:
-          console.log(`Top Header Text: ${info.data}`);
+          this.logger.debug(`Top Header Text: ${JSON.stringify(info.data)}`);
           break;
         case METADATA_BOOK:
-          console.log(`Book: ${info.data.title} - ${info.data.id}`);
+          this.logger.debug(`Book: ${info.data.title} - ${info.data.id}`);
+          this.dbService && this.dbService.handleNewBook(info);
           if (state) {
             state.setBookName(info.data.title);
             state.setBookId(info.data.id);
           }
-          this.dbService && (await this.dbService.handleNewBook(info));
           break;
         case METADATA_NIKAYA:
-          console.log(`Nikaya Type: ${info.data.subtype} - ${info.data.id}`);
+          this.logger.debug(
+            `Nikaya Type: ${info.data.subtype} - ${info.data.id}`
+          );
 
           if (info.data.subtype === 'book') {
             if (state) {
-              console.log(`NIKAYA BOOK: ${state.getBookId().toUpperCase()}`);
+              this.logger.debug(
+                `NIKAYA BOOK: ${state.getBookId().toUpperCase()}`
+              );
               state.setNikayaEntryId(state.getBookId().toUpperCase());
               state.setSuttaVaggaNumber(1);
             }
@@ -54,7 +59,7 @@ export class MetaDataHandler {
           }
 
           if (this.dbService) {
-            const neID = await this.dbService.handleNewNikayaEntry(info);
+            const neID = this.dbService.handleNewNikayaEntry(info);
             if (state) {
               state.setNikayaEntryId(neID);
               state.setSuttaVaggaNumber(1);
@@ -62,43 +67,44 @@ export class MetaDataHandler {
           }
           break;
         case METADATA_SUB_SECTION_TITLE:
-          console.log(`Nikaya Entry Title: ${info.data.title}`);
+          this.logger.debug(`Nikaya Entry Title: ${info.data.title}`);
           if (this.dbService && state) {
-            await this.dbService.handleSetNikayaEntryTitle(
+            this.dbService.handleSetNikayaEntryTitle(
               state.getNikayaEntryId(),
               info.data.title
             );
           }
           break;
         case METADATA_SUB_SECTION_TYPE_SUTTA:
-          console.log(`Sub Section Type: Sutta: ${info.data.title}`);
+          this.logger.debug(`Sub Section Type: Sutta: ${info.data.title}`);
           if (this.dbService && state) {
             const neID = state.getNikayaEntryId();
             const svNumber = state.getSuttaVaggaNumber();
-            state.setSuttaVaggaNumber(svNumber + 1);
-            await this.dbService.handleNewSuttaVaggaSection(
+            this.dbService.handleNewSuttaVaggaSection(
               neID,
               `${neID}_${svNumber}`,
               info.data.title
             );
+            state.setSuttaVaggaNumber(svNumber + 1);
           }
           break;
         case METADATA_SUB_SECTION_TYPE_VAGGA:
-          console.log(`Sub Section Type: Vagga: ${info.data.title}`);
+          this.logger.debug(`Sub Section Type: Vagga: ${info.data.title}`);
           if (this.dbService && state) {
             const neID = state.getNikayaEntryId();
             const svNumber = state.getSuttaVaggaNumber();
-            state.setSuttaVaggaNumber(svNumber + 1);
-            await this.dbService.handleNewSuttaVaggaSection(
+            this.dbService.handleNewSuttaVaggaSection(
               neId,
               `${neID}_${svNumber}`,
               info.data.title
             );
+
+            state.setSuttaVaggaNumber(svNumber + 1);
           }
           break;
         case METADATA_GATHA:
-          console.log(`Gatha Type: ${info.data.subtype}`);
-          console.log(`Gatha Text: ${info.data.text}`);
+          this.logger.debug(`Gatha Type: ${info.data.subtype}`);
+          this.logger.debug(`Gatha Text: ${info.data.text}`);
 
           if (info.data.subtype === 'gatha1') {
             //Start accumulating
@@ -114,13 +120,9 @@ export class MetaDataHandler {
               const paraId = state.getParaId();
               const subParaId = state.getSubParaId();
               const subParaNodeId = `${paraId}_${subParaId}`;
-              state.setSubParaId(subParaId + 1);
               const gathaText = state.getGathaText();
-              await this.dbService.handleNewGatha(
-                paraId,
-                subParaNodeId,
-                gathaText
-              );
+              state.setSubParaId(subParaId + 1);
+              this.dbService.handleNewGatha(paraId, subParaNodeId, gathaText);
             }
           } else {
             if (state) {
@@ -131,16 +133,16 @@ export class MetaDataHandler {
           }
           break;
         case METADATA_PALI_TEXT_PARA:
-          console.log(`Pali Text ID: ${info.data.id}`);
-          console.log(`Pali Text: ${info.data.text}`);
-          console.log('~ * ~ * ~ * ~ * ~ *');
+          this.logger.debug(`Pali Text ID: ${info.data.id}`);
+          this.logger.debug(`Pali Text: ${info.data.text}`);
+          this.logger.debug('~ * ~ * ~ * ~ * ~ *');
           if (info.data.id === undefined) {
             if (this.dbService && state) {
               const paraId = state.getParaId();
               const subParaId = state.getSubParaId();
               const subParaNodeId = `${paraId}_${subParaId}`;
               state.setSubParaId(subParaId + 1);
-              await this.dbService.handleNewSubPara(
+              this.dbService.handleNewSubPara(
                 paraId,
                 subParaNodeId,
                 info.data.text
@@ -149,11 +151,12 @@ export class MetaDataHandler {
           } else {
             if (this.dbService && state) {
               const neID = state.getNikayaEntryId();
-              const svNumber = state.getSuttaVaggaNumber();
+              let svNumber = state.getSuttaVaggaNumber();
+              svNumber--;
               const nodeId = `${neID}_${svNumber}_${info.data.id}`;
               state.setParaId(nodeId);
               state.setSubParaId(1);
-              await this.dbService.handleNewPara(
+              this.dbService.handleNewPara(
                 `${neID}_${svNumber}`,
                 nodeId,
                 info.data.text
@@ -162,20 +165,20 @@ export class MetaDataHandler {
           }
           break;
         case METADATA_TRAILER:
-          console.log(`Trailer: ${info.data.text}`);
+          this.logger.debug(`Trailer: ${info.data.text}`);
           if (this.dbService && state) {
             const neId = state.getNikayaEntryId();
-            await this.dbService.handleNETrailer(neId, info.data.text);
+            this.dbService.handleNETrailer(neId, info.data.text);
           }
           break;
         default:
           break;
       }
     } catch (e) {
-      console.error(e.message);
+      this.logger.error(e.message);
     }
 
-    const state = asyncLocalStorage.getStore();
-    console.log(`MetaDataCB: State: ${JSON.stringify(state, null, 1)}`);
+    // const state = asyncLocalStorage.getStore();
+    // this.logger.debug(`MetaDataCB: State: ${JSON.stringify(state, null, 1)}`);
   }
 }
