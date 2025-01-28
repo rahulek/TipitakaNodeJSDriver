@@ -302,6 +302,7 @@ export class Neo4JDBService {
           MERGE (subPara :SUBPARA {id: $subParaId, text: $gathaText, type: $subParaType})
           MERGE (para)-[:HAS_SUBPARA]->(subPara)
           RETURN para, subPara`;
+
     const params = {
       nodeId: nodeId,
       subParaId: subParaId,

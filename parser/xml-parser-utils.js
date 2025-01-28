@@ -229,26 +229,30 @@ export class TipitakaParser {
 
         if (divPEntry['_']) {
           let info = {};
-          if (divPEntry['$']['n']) {
-            // console.log(`<METADATA> Para Text: ${divPEntry['_']}`);
-            info = {
-              type: METADATA_PALI_TEXT_PARA,
-              data: {
-                id: divPEntry['$']['n'],
-                text: divPEntry['_'],
-              },
-            };
+          if (divPEntry['$']['rend'] === 'subhead') {
+            //Ignore
           } else {
-            // console.log(`<METADATA> Sub Para Text: ${divPEntry['_']}`);
-            info = {
-              type: METADATA_PALI_TEXT_PARA,
-              data: {
-                id: undefined,
-                text: divPEntry['_'],
-              },
-            };
+            if (divPEntry['$']['n']) {
+              // console.log(`<METADATA> Para Text: ${divPEntry['_']}`);
+              info = {
+                type: METADATA_PALI_TEXT_PARA,
+                data: {
+                  id: divPEntry['$']['n'],
+                  text: divPEntry['_'],
+                },
+              };
+            } else {
+              // console.log(`<METADATA> Sub Para Text: ${divPEntry['_']}`);
+              info = {
+                type: METADATA_PALI_TEXT_PARA,
+                data: {
+                  id: undefined,
+                  text: divPEntry['_'],
+                },
+              };
+            }
+            this.metaDataCallback && this.metaDataCallback(info);
           }
-          this.metaDataCallback && this.metaDataCallback(info);
         }
         // console.log('~ * ~ * ~ * ~ * ~ *');
       });
