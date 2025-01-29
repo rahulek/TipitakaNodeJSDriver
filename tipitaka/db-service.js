@@ -228,20 +228,23 @@ export class Neo4JDBService {
     //Split the lines of 'unicode -' OR 'unicode |'
     const lines = paraText.split(/\u2013|\u0964/);
     this.logger.debug(`*** LINES ***`);
+    let lineId = 1;
     lines.forEach((line) => {
       this.logger.debug(line);
       if (line.length !== 0) {
         const query2 = `
               MATCH (p :PARA {id: $paraId})
-              MERGE (l :LINE {text: $lineText})
+              MERGE (l :LINE {text: $lineText, id: $lineId})
               MERGE (p)-[:HAS_LINE]->(l)
               RETURN l
           `;
         const params2 = {
           paraId: nodeId,
           lineText: line.trim(),
+          lineId: `${nodeId}_${lineId}`,
         };
         this.executeWriteTx(query2, params2);
+        lineId++;
       }
     });
   }
@@ -263,7 +266,7 @@ export class Neo4JDBService {
     const params1 = {
       nodeId: nodeId,
       subParaId: subParaId,
-      subParaText: subParaText,
+      subParaText: subParaText.trim(),
     };
 
     this.executeWriteTx(query1, params1);
@@ -271,20 +274,23 @@ export class Neo4JDBService {
     //Split the lines of 'unicode -' OR 'unicode |'
     const lines = subParaText.split(/\u2013|\u0964/);
     this.logger.debug(`*** SUBPARA LINES ***`);
+    let lineId = 1;
     lines.forEach((line) => {
       this.logger.debug(line);
       if (line.length !== 0) {
         const query2 = `
               MATCH (sp :SUBPARA {id: $subParaId})
-              MERGE (l :LINE {text: $lineText})
+              MERGE (l :LINE {text: $lineText, lineId: $lineId})
               MERGE (sp)-[:HAS_LINE]->(l)
               RETURN l
           `;
         const param2 = {
           subParaId: subParaId,
-          lineText: line,
+          lineText: line.trim(),
+          lineId: `${subParaId}_${lineId}`,
         };
         this.executeWriteTx(query2, param2);
+        lineId++;
       }
     });
   }
@@ -320,21 +326,6 @@ export class Neo4JDBService {
         20
       )}`
     );
-
-    // await driver.executeQuery(
-    //   `
-    //     MATCH (ne :NIKAYAENTRY {id: $neId})
-    //     MERGE (subPara :SUBPARA {id: $subParaId, text: $gathaText, type: $gathaType})
-    //     MERGE (ne)-[:HAS_SUBPARA]->(subPara)
-    //     RETURN ne, subPara
-    // `,
-    //   {
-    //     neId: neId,
-    //     subParaId: subParaId,
-    //     gathaText: gathaText,
-    //     gathaType: gathaType,
-    //   }
-    // );
   }
 
   handleNETrailer(neId, neTrailerText) {
