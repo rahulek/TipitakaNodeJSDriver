@@ -280,7 +280,7 @@ export class Neo4JDBService {
       if (line.length !== 0) {
         const query2 = `
               MATCH (sp :SUBPARA {id: $subParaId})
-              MERGE (l :LINE {text: $lineText, lineId: $lineId})
+              MERGE (l :LINE {text: $lineText, id: $lineId})
               MERGE (sp)-[:HAS_LINE]->(l)
               RETURN l
           `;
