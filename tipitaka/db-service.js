@@ -82,6 +82,12 @@ export class Neo4JDBService {
   basicNikayaSetup() {
     this.logger.debug(`BasicNikayaSetup Start...`);
 
+    const constraintQ = `
+      CREATE CONSTRAINT line_text_unique_constraint IF NOT EXISTS FOR
+        (l :LINE) REQUIRE l.text IS UNIQUE
+    `;
+    this.executeWriteTx(constraintQ, {});
+
     const query = `
     MERGE (tipitaka :TIPITAKA {name: $name, attribution: $attribution})
           MERGE (vinaya :PITAKA {name: $vinaya})
@@ -234,9 +240,10 @@ export class Neo4JDBService {
       if (line.length !== 0) {
         const query2 = `
               MATCH (p :PARA {id: $paraId})
-              MERGE (l :LINE {text: $lineText, id: $lineId})
-              MERGE (p)-[:HAS_LINE]->(l)
-              RETURN l
+              MERGE (lid :LINEID {id: $lineId})
+              MERGE (l :LINE {text: $lineText})
+              MERGE (p)-[:HAS_LINE]->(lid)
+              MERGE (lid)-[:LINETEXT]-(l)
           `;
         const params2 = {
           paraId: nodeId,
@@ -280,9 +287,10 @@ export class Neo4JDBService {
       if (line.length !== 0) {
         const query2 = `
               MATCH (sp :SUBPARA {id: $subParaId})
-              MERGE (l :LINE {text: $lineText, id: $lineId})
-              MERGE (sp)-[:HAS_LINE]->(l)
-              RETURN l
+              MERGE (lid :LINEID {id: $lineId})
+              MERGE (l :LINE {text: $lineText})
+              MERGE (sp)-[:HAS_LINE]->(lid)
+              MERGE (lid)-[:LINETEXT]-(l)
           `;
         const param2 = {
           subParaId: subParaId,
