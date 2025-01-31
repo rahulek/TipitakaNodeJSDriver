@@ -142,11 +142,14 @@ export class MetaDataHandler {
               const subParaId = state.getSubParaId();
               const subParaNodeId = `${paraId}_${subParaId}`;
               state.setSubParaId(subParaId + 1);
-              this.dbService.handleNewSubPara(
+              const nextLineId = state.getNextLineId();
+              const newNextLineId = this.dbService.handleNewSubPara(
                 paraId,
                 subParaNodeId,
+                nextLineId,
                 info.data.text
               );
+              state.setNextLineId(newNextLineId);
             }
           } else {
             if (this.dbService && state) {
@@ -156,11 +159,12 @@ export class MetaDataHandler {
               const nodeId = `${neID}_${svNumber}_${info.data.id}`;
               state.setParaId(nodeId);
               state.setSubParaId(1);
-              this.dbService.handleNewPara(
+              const nextLineId = this.dbService.handleNewPara(
                 `${neID}_${svNumber}`,
                 nodeId,
                 info.data.text
               );
+              state.setNextLineId(nextLineId);
             }
           }
           break;

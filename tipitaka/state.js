@@ -7,6 +7,7 @@ export class TipitakaState {
     this.paraId = '';
     this.subParaId = 1;
     this.gathaText = '';
+    this.nextLineId = 0;
   }
 
   getBookId() {
@@ -63,5 +64,13 @@ export class TipitakaState {
 
   setGathaText(gathaText) {
     this.gathaText = gathaText;
+  }
+
+  getNextLineId() {
+    return this.nextLineId;
+  }
+
+  setNextLineId(lineId) {
+    this.nextLineId = lineId;
   }
 }

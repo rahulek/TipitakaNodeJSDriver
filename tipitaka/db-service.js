@@ -254,14 +254,15 @@ export class Neo4JDBService {
         lineId++;
       }
     });
+    return lineId;
   }
 
-  handleNewSubPara(nodeId, subParaId, subParaText) {
+  handleNewSubPara(nodeId, subParaId, nextLineId, subParaText) {
     this.logger.debug(
       `New Subpara : For ${nodeId} with id ${subParaId} to ${subParaText.substring(
         0,
         20
-      )}`
+      )}, lineID = ${nextLineId}`
     );
 
     const query1 = `
@@ -281,7 +282,7 @@ export class Neo4JDBService {
     //Split the lines of 'unicode -' OR 'unicode |'
     const lines = subParaText.split(/\u2013|\u0964/);
     this.logger.debug(`*** SUBPARA LINES ***`);
-    let lineId = 1;
+    let lineId = nextLineId;
     lines.forEach((line) => {
       this.logger.debug(line);
       if (line.length !== 0) {
@@ -295,12 +296,14 @@ export class Neo4JDBService {
         const param2 = {
           subParaId: subParaId,
           lineText: line.trim(),
-          lineId: `${subParaId}_${lineId}`,
+          lineId: `${nodeId}_${lineId}`,
         };
         this.executeWriteTx(query2, param2);
         lineId++;
       }
     });
+
+    return lineId;
   }
 
   handleNewGatha(nodeId, subParaId, gathaText) {
