@@ -5,6 +5,7 @@ export class Neo4JDBService {
   constructor(driver, logger) {
     this.driver = driver;
     this.logger = logger;
+    this.cyphers = [];
 
     // console.log(`Driver : ${JSON.stringify(this.driver)}`);
     // this.logger.info(`Connected to : ${this.uri}`);
@@ -73,10 +74,69 @@ export class Neo4JDBService {
       }
     };
 
-    return (async (fn, d, q, p) => {
-      const res = await fn(d, q, p);
-      return res;
-    })(dbWriteFn, this.driver, query, params);
+    //store
+    this.cyphers.push({ query, params });
+
+    return 0;
+
+    // return (async (fn, d, q, p) => {
+    //   const res = await fn(d, q, p);
+    //   return res;
+    // })(dbWriteFn, this.driver, query, params);
+  }
+
+  updateDB() {
+    const driver = this.driver;
+    let savedBookMarks = [];
+
+    if (!driver) {
+      throw new DBServiceDriverError('Neo4J Driver is not available.');
+    }
+
+    const dbWriteFn = async (driver, query, params) => {
+      let session;
+      try {
+        session = driver.session({ bookmarks: savedBookMarks });
+        await session.executeWrite(async (tx) => {
+          const res = await tx.run(query, params);
+          const resQ = JSON.stringify(res.summary.query);
+          const bms = JSON.stringify(savedBookMarks);
+          // console.log(
+          //   `Res Summary- ${JSON.stringify({
+          //     bms,
+          //     Q: resQ,
+          //     nC: res.summary.counters._stats.nodesCreated,
+          //     nD: res.summary.counters._stats.nodesDeleted,
+          //     rc: res.summary.counters._stats.relationshipsCreated,
+          //     rd: res.summary.counters._stats.relationshipsDeleted,
+          //     upNC: res.summary.updateStatistics._stats.nodesCreated,
+          //     upND: res.summary.updateStatistics._stats.nodesDeleted,
+          //     upRC: res.summary.updateStatistics._stats.relationshipsCreated,
+          //     upRD: res.summary.updateStatistics._stats.relationshipsDeleted,
+          //     //gqlStatus: res.summary.gqlStatusObjects[0].statusDescription,
+          //   })}`
+          // );
+        });
+        savedBookMarks = savedBookMarks.concat(session.lastBookmarks());
+      } catch (e) {
+        console.log(`Exception ${e}`);
+      } finally {
+        await session.close();
+      }
+    };
+
+    console.log(`Executing ${this.cyphers.length} queries`);
+    for (let i = 0; i < this.cyphers.length; i++) {
+      if (i < this.cyphers.length && this.cyphers[i] !== null) {
+        (async () => {
+          await dbWriteFn(
+            this.driver,
+            this.cyphers[i].query,
+            this.cyphers[i].params
+          );
+        })();
+      }
+    }
   }
 
   basicNikayaSetup() {
@@ -375,6 +435,6 @@ export class Neo4JDBService {
     const query = `
           MATCH (n) DETACH DELETE n
       `;
-    return this.executeWriteTx(query, null);
+    return this.executeWriteTx(query, {});
   }
 }

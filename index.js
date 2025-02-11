@@ -48,8 +48,9 @@ function main(logger) {
 
     if (process.env.npm_config_prune) {
       logger.warn(`~~~*** CAUTION: Pruning the DB Now....*** ~~~~`);
-      dbService && (await dbService.pruneDB());
-      dbService && (await dbService.cleanUp());
+      dbService && dbService.pruneDB();
+      dbService && dbService.updateDB();
+      //dbService && dbService.cleanUp();
       logger.info(`Pruning Done`);
     } else {
       const ret = await asyncLocalStorage.run(new TipitakaState(), () => {
@@ -69,6 +70,8 @@ function main(logger) {
         return 'WOW';
       });
       console.log(`${ret}`);
+      console.log(JSON.stringify(dbService.cyphers));
+      //dbService && dbService.updateDB();
       //dbService && dbService.cleanUp();
     }
   })();
